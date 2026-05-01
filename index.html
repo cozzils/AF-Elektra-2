@@ -1,311 +1,461 @@
 <!DOCTYPE html>
 
-<html lang="it"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AF Elektra 2 - Apparecchiature Elettroniche</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Tailwind Config -->
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "secondary-container": "#b1f587",
-                "inverse-primary": "#81d994",
-                "surface-container-highest": "#e2e2e2",
-                "surface-variant": "#e2e2e2",
-                "primary-fixed-dim": "#81d994",
-                "on-error": "#ffffff",
-                "tertiary-container": "#9e4151",
-                "surface-container-lowest": "#ffffff",
-                "outline-variant": "#becabc",
-                "primary-container": "#0b6f36",
-                "surface-container": "#eeeeee",
-                "primary": "#005426",
-                "on-secondary-fixed": "#092100",
-                "tertiary-fixed-dim": "#ffb2bb",
-                "on-tertiary-container": "#ffcfd3",
-                "surface-bright": "#f9f9f9",
-                "surface": "#f9f9f9",
-                "on-tertiary-fixed-variant": "#7e2839",
-                "secondary-fixed": "#b1f587",
-                "surface-dim": "#dadada",
-                "on-secondary": "#ffffff",
-                "on-background": "#1a1c1c",
-                "on-secondary-fixed-variant": "#205100",
-                "on-surface-variant": "#3f493f",
-                "tertiary-fixed": "#ffd9dc",
-                "inverse-surface": "#2f3131",
-                "secondary": "#316b0c",
-                "on-surface": "#1a1c1c",
-                "error-container": "#ffdad6",
-                "on-primary-container": "#96efa8",
-                "outline": "#6f7a6f",
-                "on-tertiary-fixed": "#400011",
-                "surface-tint": "#066d34",
-                "surface-container-low": "#f3f3f4",
-                "error": "#ba1a1a",
-                "inverse-on-surface": "#f0f1f1",
-                "on-primary-fixed-variant": "#005225",
-                "tertiary": "#802a3a",
-                "background": "#f9f9f9",
-                "surface-container-high": "#e8e8e8",
-                "primary-fixed": "#9cf6ae",
-                "on-error-container": "#93000a",
-                "on-primary-fixed": "#00210b",
-                "on-primary": "#ffffff",
-                "on-secondary-container": "#377213",
-                "on-tertiary": "#ffffff",
-                "secondary-fixed-dim": "#96d86e"
-        },
-        "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
-        },
-        "spacing": {
-                "stack-lg": "32px",
-                "margin": "32px",
-                "stack-sm": "8px",
-                "container-max": "1280px",
-                "unit": "4px",
-                "stack-xl": "64px",
-                "stack-md": "16px",
-                "base": "16px",
-                "gutter": "24px"
-        },
-        "fontFamily": {
-                "body-sm": [
-                        "Space Grotesk"
-                ],
-                "mono-data": ["monospace"],
-                "body-lg": [
-                        "Space Grotesk"
-                ],
-                "body-md": [
-                        "Space Grotesk"
-                ],
-                "label-caps": [
-                        "Space Grotesk"
-                ],
-                "headline-lg": [
-                        "Space Grotesk"
-                ],
-                "headline-md": [
-                        "Space Grotesk"
-                ],
-                "headline-xl": [
-                        "Space Grotesk"
-                ]
-        },
-        "fontSize": {
-                "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
-                "mono-data": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500" }],
-                "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
-                "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
-                "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-                "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }],
-                "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
-        }
-},
-    },
-  }
-</script>
+<html lang="it">
 
-    <link rel="stylesheet" href="static/css/style.css">
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>AF Elektra 2 - Apparecchiature Elettroniche</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap"
+                rel="stylesheet" />
+        <!-- Material Symbols -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <!-- Tailwind Config -->
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "secondary-container": "#b1f587",
+                                                "inverse-primary": "#81d994",
+                                                "surface-container-highest": "#e2e2e2",
+                                                "surface-variant": "#e2e2e2",
+                                                "primary-fixed-dim": "#81d994",
+                                                "on-error": "#ffffff",
+                                                "tertiary-container": "#9e4151",
+                                                "surface-container-lowest": "#ffffff",
+                                                "outline-variant": "#becabc",
+                                                "primary-container": "#0b6f36",
+                                                "surface-container": "#eeeeee",
+                                                "primary": "#005426",
+                                                "on-secondary-fixed": "#092100",
+                                                "tertiary-fixed-dim": "#ffb2bb",
+                                                "on-tertiary-container": "#ffcfd3",
+                                                "surface-bright": "#f9f9f9",
+                                                "surface": "#f9f9f9",
+                                                "on-tertiary-fixed-variant": "#7e2839",
+                                                "secondary-fixed": "#b1f587",
+                                                "surface-dim": "#dadada",
+                                                "on-secondary": "#ffffff",
+                                                "on-background": "#1a1c1c",
+                                                "on-secondary-fixed-variant": "#205100",
+                                                "on-surface-variant": "#3f493f",
+                                                "tertiary-fixed": "#ffd9dc",
+                                                "inverse-surface": "#2f3131",
+                                                "secondary": "#316b0c",
+                                                "on-surface": "#1a1c1c",
+                                                "error-container": "#ffdad6",
+                                                "on-primary-container": "#96efa8",
+                                                "outline": "#6f7a6f",
+                                                "on-tertiary-fixed": "#400011",
+                                                "surface-tint": "#066d34",
+                                                "surface-container-low": "#f3f3f4",
+                                                "error": "#ba1a1a",
+                                                "inverse-on-surface": "#f0f1f1",
+                                                "on-primary-fixed-variant": "#005225",
+                                                "tertiary": "#802a3a",
+                                                "background": "#f9f9f9",
+                                                "surface-container-high": "#e8e8e8",
+                                                "primary-fixed": "#9cf6ae",
+                                                "on-error-container": "#93000a",
+                                                "on-primary-fixed": "#00210b",
+                                                "on-primary": "#ffffff",
+                                                "on-secondary-container": "#377213",
+                                                "on-tertiary": "#ffffff",
+                                                "secondary-fixed-dim": "#96d86e"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "stack-lg": "32px",
+                                                "margin": "32px",
+                                                "stack-sm": "8px",
+                                                "container-max": "1280px",
+                                                "unit": "4px",
+                                                "stack-xl": "64px",
+                                                "stack-md": "16px",
+                                                "base": "16px",
+                                                "gutter": "24px"
+                                        },
+                                        "fontFamily": {
+                                                "body-sm": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "mono-data": ["monospace"],
+                                                "body-lg": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "body-md": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "label-caps": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "headline-lg": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "headline-md": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "headline-xl": [
+                                                        "Space Grotesk"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                                                "mono-data": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500" }],
+                                                "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+                                                "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+                                                "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                                                "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                                                "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }],
+                                                "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                                        }
+                                },
+                        },
+                }
+        </script>
+
+        <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- TopAppBar (Shared Component) -->
-<header class="bg-surface-container-lowest dark:bg-slate-900 font-['Space_Grotesk'] font-medium tracking-tight docked full-width top-0 border-b border-b border-outline-variant dark:border-slate-800 flat no shadows sticky z-50">
-<div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-6 h-16">
-<div class="text-xl font-black text-primary dark:text-white tracking-tighter">AF Elektra 2</div>
-<nav class="hidden md:flex gap-8 items-center h-full">
-<a class="text-primary-container border-b-2 border-primary-container pb-1 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full" href="index.html">Home</a>
-<a class="text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full" href="file/chi-siamo.html">Chi Siamo</a>
-<a class="text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full" href="file/catalogo.html">Catalogo</a>
-<a class="text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full" href="file/gallery.html">Case Studies</a>
-<a class="text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full" href="file/contatti.html">Contatti</a>
-</nav>
-<div class="flex gap-4 items-center">
-<button class="hidden lg:block text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 px-4 py-2 rounded-DEFAULT border border-transparent">Login</button>
-<button class="bg-primary-container text-on-primary px-6 py-2 rounded-DEFAULT font-bold hover:bg-primary active:scale-95 transition-all">Richiedi Preventivo</button>
-</div>
-</div>
-</header>
-<main>
-<!-- Hero Section -->
-<section class="max-w-container-max mx-auto px-base py-stack-xl lg:py-[120px] flex flex-col lg:flex-row items-center gap-stack-lg">
-<div class="flex-1 flex flex-col gap-stack-md">
-<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest flex items-center gap-2">
-<span class="w-8 h-px bg-primary inline-block"></span>
-                    Apparecchiature Elettroniche
-                </span>
-<h1 class="font-headline-xl text-headline-xl text-on-surface">
-                    Realizza con noi la <span class="text-primary-container">TUA</span> idea.
-                </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4">
-                    Progettazione, sviluppo e produzione di sistemi elettronici industriali ad alta precisione. Affidabilità e competenza per il settore B2B, dal concept al collaudo finale.
-                </p>
-<div class="flex gap-4 mt-stack-md">
-<button class="bg-primary-container text-on-primary px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps shadow-[0_4px_12px_rgba(11,111,54,0.2)] hover:bg-primary transition-colors uppercase">
-                        Esplora i Servizi
-                    </button>
-<button class="border border-primary-container text-primary-container px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-surface-container-low transition-colors uppercase">
-                        Contatta un Esperto
-                    </button>
-</div>
-</div>
-<div class="flex-1 w-full relative aspect-video lg:aspect-square bg-surface-container-high rounded-lg overflow-hidden border border-outline-variant shadow-[0_4px_24px_rgba(0,84,38,0.05)]">
-<img alt="Circuito Elettronico" class="w-full h-full object-cover opacity-90" data-alt="A pristine, modern light-mode close-up of a high-tech industrial printed circuit board (PCB). The complex network of metallic traces, surface mount components, and microchips is sharply in focus against a sophisticated technical gray background. Subtle illumination highlights the precision engineering, reflecting a corporate B2B aesthetic. The dominant colors are crisp industrial blues, silver, and deep grays, evoking a sense of reliability and expert craftsmanship." src="static/images/image_1.jpg"/>
-</div>
-</section>
-<!-- Services Section -->
-<section class="bg-surface-container-lowest border-y border-outline-variant py-stack-xl">
-<div class="max-w-container-max mx-auto px-base">
-<div class="mb-stack-lg">
-<h2 class="font-headline-md text-headline-md text-on-surface">Competenze Tecniche Core</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-3xl">Soluzioni ingegneristiche complete, supportate da decenni di esperienza pratica nel settore industriale.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Service 1 -->
-<div class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
-<span class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">design_services</span>
-<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Progettazione schede</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Sviluppo di architetture hardware personalizzate basate su specifiche tecniche rigorose.</p>
-</div>
-<!-- Service 2 -->
-<div class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
-<span class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">polyline</span>
-<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Realizzazione master</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Sbrogliatura e ottimizzazione del layout PCB per massimizzare le prestazioni e ridurre le interferenze.</p>
-</div>
-<!-- Service 3 -->
-<div class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
-<span class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">precision_manufacturing</span>
-<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Montaggio SMT</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Assemblaggio automatizzato ad alta precisione per componenti a montaggio superficiale.</p>
-</div>
-<!-- Service 4 -->
-<div class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
-<span class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">electrical_services</span>
-<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Quadristica</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Progettazione e cablaggio di quadri elettrici di comando e controllo industriale.</p>
-</div>
-<!-- Service 5 -->
-<div class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
-<span class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">terminal</span>
-<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Programmazione PLC</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Sviluppo software logico per l'automazione di macchinari e processi produttivi.</p>
-</div>
-<!-- Service 6 -->
-<div class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
-<span class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">fact_check</span>
-<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Saldatura/Collaudo</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Procedure rigorose di verifica funzionale e testing finale per garantire standard qualitativi elevati.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Products Section -->
-<section class="max-w-container-max mx-auto px-base py-stack-xl">
-<div class="flex justify-between items-end mb-stack-lg border-b border-outline-variant pb-4">
-<div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Categorie Prodotti</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">Componentistica affidabile per applicazioni gravose.</p>
-</div>
-<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-1 uppercase" href="#">
-                    Vedi Catalogo Completo <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<!-- Product 1 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT flex flex-col group cursor-pointer hover:border-primary-container transition-colors">
-<div class="h-40 bg-surface-container-low border-b border-outline-variant p-4 flex items-center justify-center">
-<span class="material-symbols-outlined text-[48px] text-outline-variant group-hover:text-primary-container transition-colors">power</span>
-</div>
-<div class="p-4">
-<h4 class="font-body-md text-body-md font-semibold text-on-surface">Alimentatori</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Soluzioni di potenza stabilizzate e industriali.</p>
-</div>
-</div>
-<!-- Product 2 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT flex flex-col group cursor-pointer hover:border-primary-container transition-colors">
-<div class="h-40 bg-surface-container-low border-b border-outline-variant p-4 flex items-center justify-center">
-<span class="material-symbols-outlined text-[48px] text-outline-variant group-hover:text-primary-container transition-colors">hub</span>
-</div>
-<div class="p-4">
-<h4 class="font-body-md text-body-md font-semibold text-on-surface">Schede Interfaccia</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Moduli di conversione e isolamento segnali.</p>
-</div>
-</div>
-<!-- Product 3 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT flex flex-col group cursor-pointer hover:border-primary-container transition-colors">
-<div class="h-40 bg-surface-container-low border-b border-outline-variant p-4 flex items-center justify-center">
-<span class="material-symbols-outlined text-[48px] text-outline-variant group-hover:text-primary-container transition-colors">electric_bolt</span>
-</div>
-<div class="p-4">
-<h4 class="font-body-md text-body-md font-semibold text-on-surface">Relè Statici</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Commutazione rapida senza usura meccanica.</p>
-</div>
-</div>
-<!-- Product 4 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT flex flex-col group cursor-pointer hover:border-primary-container transition-colors">
-<div class="h-40 bg-surface-container-low border-b border-outline-variant p-4 flex items-center justify-center">
-<span class="material-symbols-outlined text-[48px] text-outline-variant group-hover:text-primary-container transition-colors">memory</span>
-</div>
-<div class="p-4">
-<h4 class="font-body-md text-body-md font-semibold text-on-surface">Componenti</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Accessori e ricambi selezionati di alta qualità.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Chi Siamo Teaser -->
-<section class="bg-primary text-on-primary py-stack-xl mt-stack-lg border-t border-outline-variant">
-<div class="max-w-container-max mx-auto px-base grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
-<div class="order-2 lg:order-1 relative h-[300px] lg:h-[400px] rounded-DEFAULT overflow-hidden border border-outline-variant/30">
-<img alt="Laboratorio Elettronico" class="w-full h-full object-cover" data-alt="A brightly lit, modern industrial laboratory setting captured in a clean, professional aesthetic. In focus is a piece of high-precision testing equipment, metallic and angular, situated on a pristine white workbench. The background is softly blurred, showing orderly racks of technical components and tools bathed in cool, daylight-balanced lighting. The scene conveys decades of reliable engineering expertise, utilizing a strict color palette of industrial blues, technical grays, and clinical whites." src="static/images/image_2.jpg"/>
-</div>
-<div class="order-1 lg:order-2 flex flex-col gap-stack-md">
-<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest">Chi Siamo</span>
-<h2 class="font-headline-lg text-headline-lg text-on-primary">40 Anni di Eccellenza a Castenedolo</h2>
-<p class="font-body-lg text-body-lg text-surface-container-highest">
-                        Dal cuore produttivo del nord Italia, AF Elektra 2 rappresenta un solido punto di riferimento per l'elettronica industriale. La nostra longevità è il risultato di un impegno costante verso la qualità, la precisione e l'aggiornamento tecnologico continuo.
-                    </p>
-<div class="mt-4">
-<button class="border border-on-primary text-on-primary px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-on-primary/10 transition-colors uppercase">
-                            Scopri la Nostra Storia
-                        </button>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer (Shared Component) -->
-<footer class="bg-surface-container-lowest dark:bg-slate-950 font-['Space_Grotesk'] text-xs uppercase tracking-widest full-width border-t border-t border-outline-variant dark:border-slate-800 flat no shadows opacity-100 hover:opacity-80 transition-opacity">
-<div class="w-full max-w-[1280px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="text-lg font-bold text-primary dark:text-white flex flex-col gap-2 text-center md:text-left">
-<span>AF Elektra 2</span>
-<span class="text-[10px] text-on-surface-variant font-normal normal-case">© 2024 AF Elektra 2. P.IVA 01234567890. Eccellenza nell'Elettronica Industriale.</span>
-</div>
-<nav class="flex flex-wrap justify-center gap-6">
-<a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4" href="#">Termini e Condizioni</a>
-<a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4" href="#">Supporto Tecnico</a>
-<a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4" href="#">Certificazioni ISO</a>
-</nav>
-</div>
-</footer>
-</body></html>
+
+<body
+        class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+        <!-- TopAppBar (Shared Component) -->
+        <header
+                class="bg-surface-container-lowest dark:bg-slate-900 font-['Space_Grotesk'] font-medium tracking-tight docked full-width top-0 border-b border-b border-outline-variant dark:border-slate-800 flat no shadows sticky z-50">
+                <div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-6 h-16 relative">
+                        <div class="text-xl font-black text-primary dark:text-white tracking-tighter">AF Elektra 2</div>
+                        <nav class="hidden md:flex gap-8 items-center h-full">
+                                <a class="text-primary-container border-b-2 border-primary-container pb-1 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full"
+                                        href="index.html">Home</a>
+                                <a class="text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full"
+                                        href="file/chi-siamo.html">Chi Siamo</a>
+                                <a class="text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full"
+                                        href="file/catalogo.html">Catalogo</a>
+                                <a class="text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full"
+                                        href="file/gallery.html">Casi di Studio</a>
+                                <a class="text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 duration-100 flex items-center h-full"
+                                        href="file/contatti.html">Contatti</a>
+                        </nav>
+                        <div class="flex gap-4 items-center">
+                                <button
+                                        class="hidden lg:block text-on-surface-variant hover:text-primary dark:hover:text-blue-200 hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors duration-200 px-4 py-2 rounded-DEFAULT border border-transparent">Login</button>
+                                <button
+                                        class="hidden md:block bg-primary-container text-on-primary px-6 py-2 rounded-DEFAULT font-bold hover:bg-primary active:scale-95 transition-all">Richiedi
+                                        Preventivo</button>
+                                <!-- Hamburger Menu Button -->
+                                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-on-surface hover:bg-surface-container-low rounded-md transition-colors">
+                                        <span class="material-symbols-outlined text-[28px]" id="menu-icon">menu</span>
+                                </button>
+                        </div>
+                </div>
+                <!-- Mobile Nav Dropdown -->
+                <div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest dark:bg-slate-900 border-b border-outline-variant absolute w-full left-0 shadow-lg z-40">
+                        <nav class="flex flex-col px-6 py-4 gap-4">
+                                <a class="text-primary-container font-bold text-lg hover:bg-surface-container-low dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="index.html">Home</a>
+                                <a class="text-on-surface-variant text-lg hover:bg-surface-container-low dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="file/chi-siamo.html">Chi Siamo</a>
+                                <a class="text-on-surface-variant text-lg hover:bg-surface-container-low dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="file/catalogo.html">Catalogo</a>
+                                <a class="text-on-surface-variant text-lg hover:bg-surface-container-low dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="file/gallery.html">Casi di Studio</a>
+                                <a class="text-on-surface-variant text-lg hover:bg-surface-container-low dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="file/contatti.html">Contatti</a>
+                                <button class="w-full bg-primary-container text-on-primary px-6 py-3 rounded-DEFAULT font-bold hover:bg-primary active:scale-95 transition-all mt-2">
+                                        Richiedi Preventivo
+                                </button>
+                        </nav>
+                </div>
+        </header>
+        <main>
+                <!-- Hero Section -->
+                <section
+                        class="max-w-container-max mx-auto px-base py-stack-xl lg:py-[120px] flex flex-col lg:flex-row items-center gap-stack-lg">
+                        <div class="flex-1 flex flex-col gap-stack-md">
+                                <span
+                                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest flex items-center gap-2">
+                                        <span class="w-8 h-px bg-primary inline-block"></span>
+                                        Apparecchiature Elettroniche
+                                </span>
+                                <h1 class="font-headline-xl text-headline-xl text-on-surface">
+                                        Realizza con noi la <span class="text-primary-container">TUA</span> idea.
+                                </h1>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4">
+                                        Progettazione, sviluppo e produzione di sistemi elettronici industriali ad alta
+                                        precisione. Affidabilità e competenza per il settore B2B, dal concept al
+                                        collaudo finale.
+                                </p>
+                                <div class="flex flex-col sm:flex-row gap-4 mt-stack-md w-full sm:w-auto">
+                                        <button
+                                                class="bg-primary-container text-on-primary px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps shadow-[0_4px_12px_rgba(11,111,54,0.2)] hover:bg-primary transition-colors uppercase">
+                                                <a href="file/catalogo.html"> Esplora i Servizi</a>
+                                        </button>
+                                        <button
+                                                class="border border-primary-container text-primary-container px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-surface-container-low transition-colors uppercase">
+                                                <a href="file/contatti.html"> Contatta un Esperto</a>
+                                        </button>
+                                </div>
+                        </div>
+                        <div
+                                class="flex-1 w-full relative aspect-video lg:aspect-square bg-surface-container-high rounded-lg overflow-hidden border border-outline-variant shadow-[0_4px_24px_rgba(0,84,38,0.05)]">
+                                <img alt="Circuito Elettronico" class="w-full h-full object-cover opacity-90"
+                                        data-alt="A pristine, modern light-mode close-up of a high-tech industrial printed circuit board (PCB). The complex network of metallic traces, surface mount components, and microchips is sharply in focus against a sophisticated technical gray background. Subtle illumination highlights the precision engineering, reflecting a corporate B2B aesthetic. The dominant colors are crisp industrial blues, silver, and deep grays, evoking a sense of reliability and expert craftsmanship."
+                                        src="static/images/image_1.jpg" />
+                        </div>
+                </section>
+                <!-- Services Section -->
+                <section class="bg-surface-container-lowest border-y border-outline-variant py-stack-xl">
+                        <div class="max-w-container-max mx-auto px-base">
+                                <div class="mb-stack-lg">
+                                        <h2 class="font-headline-md text-headline-md text-on-surface">Competenze
+                                                Tecniche Core</h2>
+                                        <p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-3xl">
+                                                Soluzioni ingegneristiche complete, supportate da decenni di esperienza
+                                                pratica nel settore industriale.</p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                                        <!-- Service 1 -->
+                                        <div
+                                                class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
+                                                <span
+                                                        class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">design_services</span>
+                                                <h3
+                                                        class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+                                                        Progettazione schede</h3>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant">Sviluppo di
+                                                        architetture hardware personalizzate basate su specifiche
+                                                        tecniche rigorose.</p>
+                                        </div>
+                                        <!-- Service 2 -->
+                                        <div
+                                                class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
+                                                <span
+                                                        class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">polyline</span>
+                                                <h3
+                                                        class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+                                                        Realizzazione master</h3>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                                        Sbrogliatura e ottimizzazione del layout PCB per massimizzare le
+                                                        prestazioni e ridurre le interferenze.</p>
+                                        </div>
+                                        <!-- Service 3 -->
+                                        <div
+                                                class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
+                                                <span
+                                                        class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">precision_manufacturing</span>
+                                                <h3
+                                                        class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+                                                        Montaggio SMT</h3>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                                        Assemblaggio automatizzato ad alta precisione per componenti a
+                                                        montaggio superficiale.</p>
+                                        </div>
+                                        <!-- Service 4 -->
+                                        <div
+                                                class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
+                                                <span
+                                                        class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">electrical_services</span>
+                                                <h3
+                                                        class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+                                                        Quadristica</h3>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                                        Progettazione e cablaggio di quadri elettrici di comando e
+                                                        controllo industriale.</p>
+                                        </div>
+                                        <!-- Service 5 -->
+                                        <div
+                                                class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
+                                                <span
+                                                        class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">terminal</span>
+                                                <h3
+                                                        class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+                                                        Programmazione PLC</h3>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant">Sviluppo
+                                                        software logico per l'automazione di macchinari e processi
+                                                        produttivi.</p>
+                                        </div>
+                                        <!-- Service 6 -->
+                                        <div
+                                                class="bg-surface border border-outline-variant rounded-lg p-gutter hover:border-secondary transition-colors group">
+                                                <span
+                                                        class="material-symbols-outlined text-[32px] text-primary mb-stack-sm block group-hover:text-secondary transition-colors">fact_check</span>
+                                                <h3
+                                                        class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+                                                        Saldatura/Collaudo</h3>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant">Procedure
+                                                        rigorose di verifica funzionale e testing finale per garantire
+                                                        standard qualitativi elevati.</p>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Products Section -->
+                <section class="max-w-container-max mx-auto px-base py-stack-xl">
+                        <div class="flex justify-between items-end mb-stack-lg border-b border-outline-variant pb-4">
+                                <div>
+                                        <h2 class="font-headline-md text-headline-md text-on-surface">Categorie Prodotti
+                                        </h2>
+                                        <p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                                                Componentistica affidabile per applicazioni gravose.</p>
+                                </div>
+                                <a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-1 uppercase"
+                                        href="file/catalogo.html">
+                                        Vedi Catalogo Completo <span
+                                                class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </a>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                                <!-- Product 1 -->
+                                <div
+                                        class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT flex flex-col group cursor-pointer hover:border-primary-container transition-colors">
+                                        <div
+                                                class="h-40 bg-surface-container-low border-b border-outline-variant p-4 flex items-center justify-center">
+                                                <span
+                                                        class="material-symbols-outlined text-[48px] text-outline-variant group-hover:text-primary-container transition-colors">power</span>
+                                        </div>
+                                        <div class="p-4">
+                                                <h4 class="font-body-md text-body-md font-semibold text-on-surface">
+                                                        Alimentatori</h4>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                                                        Soluzioni di potenza stabilizzate e industriali.</p>
+                                        </div>
+                                </div>
+                                <!-- Product 2 -->
+                                <div
+                                        class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT flex flex-col group cursor-pointer hover:border-primary-container transition-colors">
+                                        <div
+                                                class="h-40 bg-surface-container-low border-b border-outline-variant p-4 flex items-center justify-center">
+                                                <span
+                                                        class="material-symbols-outlined text-[48px] text-outline-variant group-hover:text-primary-container transition-colors">hub</span>
+                                        </div>
+                                        <div class="p-4">
+                                                <h4 class="font-body-md text-body-md font-semibold text-on-surface">
+                                                        Schede Interfaccia</h4>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Moduli
+                                                        di conversione e isolamento segnali.</p>
+                                        </div>
+                                </div>
+                                <!-- Product 3 -->
+                                <div
+                                        class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT flex flex-col group cursor-pointer hover:border-primary-container transition-colors">
+                                        <div
+                                                class="h-40 bg-surface-container-low border-b border-outline-variant p-4 flex items-center justify-center">
+                                                <span
+                                                        class="material-symbols-outlined text-[48px] text-outline-variant group-hover:text-primary-container transition-colors">electric_bolt</span>
+                                        </div>
+                                        <div class="p-4">
+                                                <h4 class="font-body-md text-body-md font-semibold text-on-surface">Relè
+                                                        Statici</h4>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                                                        Commutazione rapida senza usura meccanica.</p>
+                                        </div>
+                                </div>
+                                <!-- Product 4 -->
+                                <div
+                                        class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT flex flex-col group cursor-pointer hover:border-primary-container transition-colors">
+                                        <div
+                                                class="h-40 bg-surface-container-low border-b border-outline-variant p-4 flex items-center justify-center">
+                                                <span
+                                                        class="material-symbols-outlined text-[48px] text-outline-variant group-hover:text-primary-container transition-colors">memory</span>
+                                        </div>
+                                        <div class="p-4">
+                                                <h4 class="font-body-md text-body-md font-semibold text-on-surface">
+                                                        Componenti</h4>
+                                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                                                        Accessori e ricambi selezionati di alta qualità.</p>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Chi Siamo Teaser -->
+                <section class="bg-primary text-on-primary py-stack-xl mt-stack-lg border-t border-outline-variant">
+                        <div
+                                class="max-w-container-max mx-auto px-base grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+                                <div
+                                        class="order-2 lg:order-1 relative h-[300px] lg:h-[400px] rounded-DEFAULT overflow-hidden border border-outline-variant/30">
+                                        <img alt="Laboratorio Elettronico" class="w-full h-full object-cover"
+                                                data-alt="A brightly lit, modern industrial laboratory setting captured in a clean, professional aesthetic. In focus is a piece of high-precision testing equipment, metallic and angular, situated on a pristine white workbench. The background is softly blurred, showing orderly racks of technical components and tools bathed in cool, daylight-balanced lighting. The scene conveys decades of reliable engineering expertise, utilizing a strict color palette of industrial blues, technical grays, and clinical whites."
+                                                src="static/images/image_2.jpg" />
+                                </div>
+                                <div class="order-1 lg:order-2 flex flex-col gap-stack-md">
+                                        <span
+                                                class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest">Chi
+                                                Siamo</span>
+                                        <h2 class="font-headline-lg text-headline-lg text-on-primary">40 Anni di
+                                                Eccellenza a Castenedolo</h2>
+                                        <p class="font-body-lg text-body-lg text-surface-container-highest">
+                                                Dal cuore produttivo del nord Italia, AF Elektra 2 rappresenta un solido
+                                                punto di riferimento per l'elettronica industriale. La nostra longevità
+                                                è il risultato di un impegno costante verso la qualità, la precisione e
+                                                l'aggiornamento tecnologico continuo.
+                                        </p>
+                                        <div class="mt-4">
+                                                <button
+                                                        class="border border-on-primary text-on-primary px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-on-primary/10 transition-colors uppercase">
+                                                        <a href="file/chi-siamo.html">Scopri la Nostra Storia</a>
+                                                </button>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- Footer (Shared Component) -->
+        <footer
+                class="bg-surface-container-lowest dark:bg-slate-950 font-['Space_Grotesk'] text-xs uppercase tracking-widest full-width border-t border-t border-outline-variant dark:border-slate-800 flat no shadows opacity-100 hover:opacity-80 transition-opacity">
+                <div
+                        class="w-full max-w-[1280px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div
+                                class="text-lg font-bold text-primary dark:text-white flex flex-col gap-2 text-center md:text-left">
+                                <span>AF Elektra 2</span>
+                                <span class="text-[10px] text-on-surface-variant font-normal normal-case">© 2024 AF
+                                        Elektra 2. P.IVA 03286600980. Eccellenza nell'Elettronica Industriale.</span>
+                        </div>
+                        <nav class="flex flex-wrap justify-center gap-6">
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Privacy Policy</a>
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Termini e Condizioni</a>
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Supporto Tecnico</a>
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Certificazioni ISO</a>
+                        </nav>
+                </div>
+        </footer>
+        <!-- Mobile Menu Script -->
+        <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                        const menuBtn = document.getElementById('mobile-menu-btn');
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        const menuIcon = document.getElementById('menu-icon');
+
+                        if(menuBtn && mobileMenu) {
+                                menuBtn.addEventListener('click', () => {
+                                        mobileMenu.classList.toggle('hidden');
+                                        if (mobileMenu.classList.contains('hidden')) {
+                                                menuIcon.textContent = 'menu';
+                                        } else {
+                                                menuIcon.textContent = 'close';
+                                        }
+                                });
+                        }
+                });
+        </script>
+</body>
+
+</html>

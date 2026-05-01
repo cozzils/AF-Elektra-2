@@ -1,308 +1,420 @@
 <!DOCTYPE html>
 
-<html lang="it"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contatti - AF Elektra 2</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<html lang="it">
 
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "secondary-container": "#b1f587",
-                "inverse-primary": "#81d994",
-                "surface-container-highest": "#e2e2e2",
-                "surface-variant": "#e2e2e2",
-                "primary-fixed-dim": "#81d994",
-                "on-error": "#ffffff",
-                "tertiary-container": "#9e4151",
-                "surface-container-lowest": "#ffffff",
-                "outline-variant": "#becabc",
-                "primary-container": "#0b6f36",
-                "surface-container": "#eeeeee",
-                "primary": "#005426",
-                "on-secondary-fixed": "#092100",
-                "tertiary-fixed-dim": "#ffb2bb",
-                "on-tertiary-container": "#ffcfd3",
-                "surface-bright": "#f9f9f9",
-                "surface": "#f9f9f9",
-                "on-tertiary-fixed-variant": "#7e2839",
-                "secondary-fixed": "#b1f587",
-                "surface-dim": "#dadada",
-                "on-secondary": "#ffffff",
-                "on-background": "#1a1c1c",
-                "on-secondary-fixed-variant": "#205100",
-                "on-surface-variant": "#3f493f",
-                "tertiary-fixed": "#ffd9dc",
-                "inverse-surface": "#2f3131",
-                "secondary": "#316b0c",
-                "on-surface": "#1a1c1c",
-                "error-container": "#ffdad6",
-                "on-primary-container": "#96efa8",
-                "outline": "#6f7a6f",
-                "on-tertiary-fixed": "#400011",
-                "surface-tint": "#066d34",
-                "surface-container-low": "#f3f3f4",
-                "error": "#ba1a1a",
-                "inverse-on-surface": "#f0f1f1",
-                "on-primary-fixed-variant": "#005225",
-                "tertiary": "#802a3a",
-                "background": "#f9f9f9",
-                "surface-container-high": "#e8e8e8",
-                "primary-fixed": "#9cf6ae",
-                "on-error-container": "#93000a",
-                "on-primary-fixed": "#00210b",
-                "on-primary": "#ffffff",
-                "on-secondary-container": "#377213",
-                "on-tertiary": "#ffffff",
-                "secondary-fixed-dim": "#96d86e"
-        },
-        "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
-        },
-        "spacing": {
-                "md": "16px",
-                "container-margin": "24px",
-                "gutter": "16px",
-                "xs": "4px",
-                "sm": "8px",
-                "unit": "4px",
-                "xl": "32px",
-                "lg": "24px"
-        },
-        "fontFamily": {
-                "h3": [
-                        "Space Grotesk"
-                ],
-                "body-md": [
-                        "Space Grotesk"
-                ],
-                "body-lg": [
-                        "Space Grotesk"
-                ],
-                "h1": [
-                        "Space Grotesk"
-                ],
-                "label-sm": [
-                        "Space Grotesk"
-                ],
-                "label-lg": [
-                        "Space Grotesk"
-                ],
-                "h2": [
-                        "Space Grotesk"
-                ]
-        },
-        "fontSize": {
-                "h3": [
-                        "24px",
-                        {
-                                "lineHeight": "1.3",
-                                "fontWeight": "600"
-                        }
-                ],
-                "body-md": [
-                        "16px",
-                        {
-                                "lineHeight": "1.5",
-                                "fontWeight": "400"
-                        }
-                ],
-                "body-lg": [
-                        "18px",
-                        {
-                                "lineHeight": "1.5",
-                                "fontWeight": "400"
-                        }
-                ],
-                "h1": [
-                        "40px",
-                        {
-                                "lineHeight": "1.2",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "700"
-                        }
-                ],
-                "label-sm": [
-                        "12px",
-                        {
-                                "lineHeight": "1.2",
-                                "fontWeight": "500"
-                        }
-                ],
-                "label-lg": [
-                        "14px",
-                        {
-                                "lineHeight": "1.2",
-                                "fontWeight": "600"
-                        }
-                ],
-                "h2": [
-                        "32px",
-                        {
-                                "lineHeight": "1.2",
-                                "letterSpacing": "-0.01em",
-                                "fontWeight": "600"
-                        }
-                ]
-        }
-},
-    },
-  }
-</script>
-    <link rel="stylesheet" href="../static/css/style.css">
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Contatti - AF Elektra 2</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "secondary-container": "#b1f587",
+                                                "inverse-primary": "#81d994",
+                                                "surface-container-highest": "#e2e2e2",
+                                                "surface-variant": "#e2e2e2",
+                                                "primary-fixed-dim": "#81d994",
+                                                "on-error": "#ffffff",
+                                                "tertiary-container": "#9e4151",
+                                                "surface-container-lowest": "#ffffff",
+                                                "outline-variant": "#becabc",
+                                                "primary-container": "#0b6f36",
+                                                "surface-container": "#eeeeee",
+                                                "primary": "#005426",
+                                                "on-secondary-fixed": "#092100",
+                                                "tertiary-fixed-dim": "#ffb2bb",
+                                                "on-tertiary-container": "#ffcfd3",
+                                                "surface-bright": "#f9f9f9",
+                                                "surface": "#f9f9f9",
+                                                "on-tertiary-fixed-variant": "#7e2839",
+                                                "secondary-fixed": "#b1f587",
+                                                "surface-dim": "#dadada",
+                                                "on-secondary": "#ffffff",
+                                                "on-background": "#1a1c1c",
+                                                "on-secondary-fixed-variant": "#205100",
+                                                "on-surface-variant": "#3f493f",
+                                                "tertiary-fixed": "#ffd9dc",
+                                                "inverse-surface": "#2f3131",
+                                                "secondary": "#316b0c",
+                                                "on-surface": "#1a1c1c",
+                                                "error-container": "#ffdad6",
+                                                "on-primary-container": "#96efa8",
+                                                "outline": "#6f7a6f",
+                                                "on-tertiary-fixed": "#400011",
+                                                "surface-tint": "#066d34",
+                                                "surface-container-low": "#f3f3f4",
+                                                "error": "#ba1a1a",
+                                                "inverse-on-surface": "#f0f1f1",
+                                                "on-primary-fixed-variant": "#005225",
+                                                "tertiary": "#802a3a",
+                                                "background": "#f9f9f9",
+                                                "surface-container-high": "#e8e8e8",
+                                                "primary-fixed": "#9cf6ae",
+                                                "on-error-container": "#93000a",
+                                                "on-primary-fixed": "#00210b",
+                                                "on-primary": "#ffffff",
+                                                "on-secondary-container": "#377213",
+                                                "on-tertiary": "#ffffff",
+                                                "secondary-fixed-dim": "#96d86e"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "md": "16px",
+                                                "container-margin": "24px",
+                                                "gutter": "16px",
+                                                "xs": "4px",
+                                                "sm": "8px",
+                                                "unit": "4px",
+                                                "xl": "32px",
+                                                "lg": "24px"
+                                        },
+                                        "fontFamily": {
+                                                "h3": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "body-md": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "body-lg": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "h1": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "label-sm": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "label-lg": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "h2": [
+                                                        "Space Grotesk"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "h3": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "1.3",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "1.5",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "1.5",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "h1": [
+                                                        "40px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "label-lg": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "h2": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <link rel="stylesheet" href="../static/css/style.css">
 </head>
-<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col font-body-md">
-<!-- TopAppBar -->
-<header class="bg-surface-container-lowest sticky full-width top-0 border-b border-surface-container-highest z-50 flat no shadows">
-<div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-6 h-16">
-<div class="text-xl font-bold text-primary tracking-tighter font-h3">AF Elektra 2</div>
-<nav class="hidden md:flex items-center gap-6 font-label-lg tracking-tight">
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-2 py-1 rounded" href="../index.html">Home</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-2 py-1 rounded" href="chi-siamo.html">Chi Siamo</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-2 py-1 rounded" href="catalogo.html">Catalogo</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-2 py-1 rounded" href="gallery.html">Case Studies</a>
-<a class="text-[#0B6F36] border-b-2 border-[#0B6F36] pb-1 px-2 py-1" href="contatti.html">Contatti</a>
-</nav>
-<div class="hidden md:flex items-center gap-4 font-label-lg tracking-tight">
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-4 py-2" href="#">Login</a>
-<a class="bg-primary text-on-primary hover:bg-[#7FBF59] transition-colors active:scale-95 duration-100 px-4 py-2 rounded" href="#">Richiedi Preventivo</a>
-</div>
-</div>
-</header>
-<!-- Main Content Canvas -->
-<main class="flex-grow w-full max-w-[1280px] mx-auto px-6 py-12 flex flex-col gap-xl">
-<!-- Page Header -->
-<section class="max-w-3xl">
-<h1 class="font-h1 text-primary mb-sm">Contattaci</h1>
-<p class="font-body-lg text-on-surface-variant">Siamo a disposizione per consulenze tecniche, richieste di preventivo e supporto commerciale. Il nostro team di esperti in elettronica industriale risponderà nel più breve tempo possibile.</p>
-</section>
-<!-- Bento Grid Layout for Contact Info & Form -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-<!-- Contact Information Column (Left) -->
-<div class="lg:col-span-5 flex flex-col gap-lg">
-<!-- Info Card -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-lg shadow-sm">
-<h2 class="font-h3 text-primary mb-md">Sede Operativa</h2>
-<ul class="flex flex-col gap-md">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[#0B6F36] mt-1" data-icon="location_on">location_on</span>
-<div>
-<span class="block font-label-sm text-outline mb-1 uppercase">Indirizzo</span>
-<span class="font-body-md text-on-surface">Via Artigiani, 19<br/>25014 Castenedolo (BS)<br/>Italia</span>
-</div>
-</li>
-<li class="w-full h-px bg-outline-variant/50"></li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[#0B6F36] mt-1" data-icon="call">call</span>
-<div>
-<span class="block font-label-sm text-outline mb-1 uppercase">Telefono</span>
-<a class="font-body-md text-primary hover:text-[#7FBF59] transition-colors" href="tel:0302130630">030 2130630</a>
-</div>
-</li>
-<li class="w-full h-px bg-outline-variant/50"></li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[#0B6F36] mt-1" data-icon="mail">mail</span>
-<div>
-<span class="block font-label-sm text-outline mb-1 uppercase">Email Commerciale</span>
-<a class="font-body-md text-primary hover:text-[#7FBF59] transition-colors" href="mailto:afelektra2@afelektra.com">afelektra2@afelektra.com</a>
-</div>
-</li>
-</ul>
-<div class="mt-lg bg-surface-container-low p-4 rounded border border-outline-variant/50">
-<span class="block font-label-sm text-outline mb-1 uppercase">Dati Fiscali</span>
-<span class="font-body-md text-on-surface-variant">P.IVA / C.F.: 03286600980</span>
-</div>
-</div>
-<!-- Map Placeholder -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden h-[300px] relative shadow-sm group">
-<img alt="Map of Brescia area" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" data-alt="A highly detailed top-down view of a modern industrial park area in Brescia, Italy, shown in a clean, high-contrast map style. The map uses a sophisticated palette of deep navy blues, pristine whites, and subtle gray tones to highlight transportation arteries and industrial zones. The lighting suggests a clear daytime view with sharp delineations between buildings and roads. The aesthetic is strictly technical and professional, resembling a high-end diagnostic tool interface or a precision logistics dashboard." data-location="Brescia, Italy" src="../static/images/image_8.jpg"/>
-<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
-<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-<span class="material-symbols-outlined text-[#0B6F36] text-4xl" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
-<div class="bg-white/90 backdrop-blur-sm px-3 py-1 rounded shadow-sm border border-outline-variant mt-2">
-<span class="font-label-sm text-primary">AF Elektra 2</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Contact Form Column (Right) -->
-<div class="lg:col-span-7">
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-lg shadow-sm h-full">
-<div class="mb-md border-b border-surface-container-high pb-4 bg-surface-container-low -mx-lg px-lg -mt-lg pt-lg rounded-t-lg">
-<h2 class="font-h2 text-primary">Invia una Richiesta</h2>
-<p class="font-body-md text-on-surface-variant mt-2">Compila il form sottostante con i dettagli del tuo progetto. I campi contrassegnati con l'asterisco (*) sono obbligatori.</p>
-</div>
-<form class="flex flex-col gap-md mt-6">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="flex flex-col">
-<label class="font-label-sm text-on-surface mb-2 uppercase" for="nome">Nome / Azienda *</label>
-<input class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm" id="nome" name="nome" required="" type="text"/>
-</div>
-<div class="flex flex-col">
-<label class="font-label-sm text-on-surface mb-2 uppercase" for="email">Email *</label>
-<input class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm" id="email" name="email" required="" type="email"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="flex flex-col">
-<label class="font-label-sm text-on-surface mb-2 uppercase" for="telefono">Telefono</label>
-<input class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm" id="telefono" name="telefono" type="tel"/>
-</div>
-<div class="flex flex-col">
-<label class="font-label-sm text-on-surface mb-2 uppercase" for="reparto">Area di Interesse</label>
-<select class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm" id="reparto" name="reparto">
-<option value="commerciale">Informazioni Commerciali</option>
-<option value="tecnico">Supporto Tecnico</option>
-<option value="preventivo">Richiesta Preventivo</option>
-<option value="altro">Altro</option>
-</select>
-</div>
-</div>
-<div class="flex flex-col mt-2">
-<label class="font-label-sm text-on-surface mb-2 uppercase" for="messaggio">Messaggio *</label>
-<textarea class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm resize-y" id="messaggio" name="messaggio" required="" rows="5"></textarea>
-</div>
-<div class="flex items-start mt-2">
-<div class="flex items-center h-5">
-<input aria-describedby="privacy-text" class="w-4 h-4 bg-surface-container-lowest border-outline-variant rounded focus:ring-[#0B6F36] focus:ring-2 text-[#0B6F36]" id="privacy" required="" type="checkbox"/>
-</div>
-<div class="ml-3 text-sm">
-<label class="font-body-md text-on-surface-variant" for="privacy">Ho letto e accetto la <a class="text-[#0B6F36] hover:underline" href="#">Privacy Policy</a> per il trattamento dei dati personali. *</label>
-</div>
-</div>
-<div class="mt-md flex justify-end">
-<button class="bg-primary hover:bg-[#7FBF59] text-on-primary font-label-lg uppercase py-3 px-8 rounded transition-colors duration-200 focus:ring-4 focus:outline-none focus:ring-[#7FBF59]/30 flex items-center gap-2" type="submit">
-                                Invia Richiesta
-                                <span class="material-symbols-outlined text-sm" data-icon="send">send</span>
-</button>
-</div>
-</form>
-</div>
-</div>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container border-t border-outline-variant full-width mt-auto">
-<div class="w-full max-w-[1280px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="flex flex-col items-center md:items-start gap-2">
-<span class="text-lg font-bold text-primary font-h3">AF Elektra 2</span>
-<span class="font-label-sm uppercase tracking-widest text-on-surface-variant">© 2024 AF Elektra 2. P.IVA 01234567890. Eccellenza nell'Elettronica Industriale.</span>
-</div>
-<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-<a class="font-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-100 hover:opacity-80 transition-opacity" href="#">Privacy Policy</a>
-<a class="font-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-100 hover:opacity-80 transition-opacity" href="#">Termini e Condizioni</a>
-<a class="font-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-100 hover:opacity-80 transition-opacity" href="#">Supporto Tecnico</a>
-<a class="font-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-100 hover:opacity-80 transition-opacity" href="#">Certificazioni ISO</a>
-</nav>
-</div>
-</footer>
-</body></html>
+
+<body
+        class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col font-body-md">
+        <!-- TopAppBar -->
+        <header
+                class="bg-surface-container-lowest sticky full-width top-0 border-b border-surface-container-highest z-50 flat no shadows">
+                <div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-6 h-16 relative">
+                        <div class="text-xl font-bold text-primary tracking-tighter font-h3">AF Elektra 2</div>
+                        <nav class="hidden md:flex items-center gap-6 font-label-lg tracking-tight">
+                                <a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-2 py-1 rounded"
+                                        href="../index.html">Home</a>
+                                <a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-2 py-1 rounded"
+                                        href="chi-siamo.html">Chi Siamo</a>
+                                <a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-2 py-1 rounded"
+                                        href="catalogo.html">Catalogo</a>
+                                <a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-2 py-1 rounded"
+                                        href="gallery.html">Casi di Studio</a>
+                                <a class="text-[#0B6F36] border-b-2 border-[#0B6F36] pb-1 px-2 py-1"
+                                        href="contatti.html">Contatti</a>
+                        </nav>
+                        <div class="flex items-center gap-4 font-label-lg tracking-tight">
+                                <a class="hidden lg:inline-block text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 active:scale-95 duration-100 px-4 py-2"
+                                        href="#">Login</a>
+                                <a class="hidden md:block bg-primary text-on-primary hover:bg-[#7FBF59] transition-colors active:scale-95 duration-100 px-4 py-2 rounded"
+                                        href="#">Richiedi Preventivo</a>
+                                <!-- Hamburger Menu Button -->
+                                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-on-surface-variant hover:bg-surface-container-low rounded-md transition-colors">
+                                        <span class="material-symbols-outlined text-[28px]" id="menu-icon">menu</span>
+                                </button>
+                        </div>
+                </div>
+                <!-- Mobile Nav Dropdown -->
+                <div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-b border-surface-container-highest absolute w-full left-0 shadow-lg z-40">
+                        <nav class="flex flex-col px-6 py-4 gap-4 font-label-lg">
+                                <a class="text-on-surface-variant text-lg hover:bg-surface-container-low p-2 rounded transition-colors"
+                                        href="../index.html">Home</a>
+                                <a class="text-on-surface-variant text-lg hover:bg-surface-container-low p-2 rounded transition-colors"
+                                        href="chi-siamo.html">Chi Siamo</a>
+                                <a class="text-on-surface-variant text-lg hover:bg-surface-container-low p-2 rounded transition-colors"
+                                        href="catalogo.html">Catalogo</a>
+                                <a class="text-on-surface-variant text-lg hover:bg-surface-container-low p-2 rounded transition-colors"
+                                        href="gallery.html">Casi di Studio</a>
+                                <a class="text-[#0B6F36] font-bold text-lg hover:bg-surface-container-low p-2 rounded transition-colors"
+                                        href="contatti.html">Contatti</a>
+                                <a class="w-full bg-primary text-on-primary text-center px-6 py-3 rounded font-bold hover:opacity-90 active:scale-95 transition-all mt-2"
+                                        href="#">Richiedi Preventivo</a>
+                        </nav>
+                </div>
+        </header>
+        <!-- Main Content Canvas -->
+        <main class="flex-grow w-full max-w-[1280px] mx-auto px-6 py-12 flex flex-col gap-xl">
+                <!-- Page Header -->
+                <section class="max-w-3xl">
+                        <h1 class="font-h1 text-primary mb-sm">Contattaci</h1>
+                        <p class="font-body-lg text-on-surface-variant">Siamo a disposizione per consulenze tecniche,
+                                richieste di preventivo e supporto commerciale. Il nostro team di esperti in elettronica
+                                industriale risponderà nel più breve tempo possibile.</p>
+                </section>
+                <!-- Bento Grid Layout for Contact Info & Form -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                        <!-- Contact Information Column (Left) -->
+                        <div class="lg:col-span-5 flex flex-col gap-lg">
+                                <!-- Info Card -->
+                                <div
+                                        class="bg-surface-container-lowest border border-outline-variant rounded-lg p-lg shadow-sm">
+                                        <h2 class="font-h3 text-primary mb-md">Sede Operativa</h2>
+                                        <ul class="flex flex-col gap-md">
+                                                <li class="flex items-start gap-3">
+                                                        <span class="material-symbols-outlined text-[#0B6F36] mt-1"
+                                                                data-icon="location_on">location_on</span>
+                                                        <div>
+                                                                <span
+                                                                        class="block font-label-sm text-outline mb-1 uppercase">Indirizzo</span>
+                                                                <span class="font-body-md text-on-surface">Via
+                                                                        Artigiani, 19<br />25014 Castenedolo
+                                                                        (BS)<br />Italia</span>
+                                                        </div>
+                                                </li>
+                                                <li class="w-full h-px bg-outline-variant/50"></li>
+                                                <li class="flex items-start gap-3">
+                                                        <span class="material-symbols-outlined text-[#0B6F36] mt-1"
+                                                                data-icon="call">call</span>
+                                                        <div>
+                                                                <span
+                                                                        class="block font-label-sm text-outline mb-1 uppercase">Telefono</span>
+                                                                <a class="font-body-md text-primary hover:text-[#7FBF59] transition-colors"
+                                                                        href="tel:0302130630">030 2130630</a>
+                                                        </div>
+                                                </li>
+                                                <li class="w-full h-px bg-outline-variant/50"></li>
+                                                <li class="flex items-start gap-3">
+                                                        <span class="material-symbols-outlined text-[#0B6F36] mt-1"
+                                                                data-icon="mail">mail</span>
+                                                        <div>
+                                                                <span
+                                                                        class="block font-label-sm text-outline mb-1 uppercase">Email
+                                                                        Commerciale</span>
+                                                                <a class="font-body-md text-primary hover:text-[#7FBF59] transition-colors"
+                                                                        href="mailto:afelektra2@afelektra.com">afelektra2@afelektra.com</a>
+                                                        </div>
+                                                </li>
+                                        </ul>
+                                        <div
+                                                class="mt-lg bg-surface-container-low p-4 rounded border border-outline-variant/50">
+                                                <span class="block font-label-sm text-outline mb-1 uppercase">Dati
+                                                        Fiscali</span>
+                                                <span class="font-body-md text-on-surface-variant">P.IVA / C.F.:
+                                                        03286600980</span>
+                                        </div>
+                                </div>
+                                <!-- Map Placeholder -->
+                                <div
+                                        class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden h-[300px] relative shadow-sm group">
+                                        <iframe 
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.1234567890!2d10.2987654!3d45.4745678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI4JzI4LjQiTiAxMMKwMTcnNTUuNiJF!5e0!3m2!1sit!2sit!4v1610000000000!5m2!1sit!2sit&q=Via+Artigiani,+19,+25014+Castenedolo+BS,+Italia" 
+                                                width="100%" 
+                                                height="100%" 
+                                                style="border:0;" 
+                                                allowfullscreen="" 
+                                                loading="lazy" 
+                                                referrerpolicy="no-referrer-when-downgrade"
+                                                class="w-full h-full">
+                                        </iframe>
+                                </div>
+                        </div>
+                        <!-- Contact Form Column (Right) -->
+                        <div class="lg:col-span-7">
+                                <div
+                                        class="bg-surface-container-lowest border border-outline-variant rounded-lg p-lg shadow-sm h-full">
+                                        <div
+                                                class="mb-md border-b border-surface-container-high pb-4 bg-surface-container-low -mx-lg px-lg -mt-lg pt-lg rounded-t-lg">
+                                                <h2 class="font-h2 text-primary">Invia una Richiesta</h2>
+                                                <p class="font-body-md text-on-surface-variant mt-2">Compila il form
+                                                        sottostante con i dettagli del tuo progetto. I campi
+                                                        contrassegnati con l'asterisco (*) sono obbligatori.</p>
+                                        </div>
+                                        <form class="flex flex-col gap-md mt-6">
+                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                        <div class="flex flex-col">
+                                                                <label class="font-label-sm text-on-surface mb-2 uppercase"
+                                                                        for="nome">Nome / Azienda *</label>
+                                                                <input class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm"
+                                                                        id="nome" name="nome" required="" type="text" />
+                                                        </div>
+                                                        <div class="flex flex-col">
+                                                                <label class="font-label-sm text-on-surface mb-2 uppercase"
+                                                                        for="email">Email *</label>
+                                                                <input class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm"
+                                                                        id="email" name="email" required=""
+                                                                        type="email" />
+                                                        </div>
+                                                </div>
+                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                        <div class="flex flex-col">
+                                                                <label class="font-label-sm text-on-surface mb-2 uppercase"
+                                                                        for="telefono">Telefono</label>
+                                                                <input class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm"
+                                                                        id="telefono" name="telefono" type="tel" />
+                                                        </div>
+                                                        <div class="flex flex-col">
+                                                                <label class="font-label-sm text-on-surface mb-2 uppercase"
+                                                                        for="reparto">Area di Interesse</label>
+                                                                <select class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm"
+                                                                        id="reparto" name="reparto">
+                                                                        <option value="commerciale">Informazioni
+                                                                                Commerciali</option>
+                                                                        <option value="tecnico">Supporto Tecnico
+                                                                        </option>
+                                                                        <option value="preventivo">Richiesta Preventivo
+                                                                        </option>
+                                                                        <option value="altro">Altro</option>
+                                                                </select>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-col mt-2">
+                                                        <label class="font-label-sm text-on-surface mb-2 uppercase"
+                                                                for="messaggio">Messaggio *</label>
+                                                        <textarea
+                                                                class="bg-surface-container-lowest border border-outline-variant text-on-surface text-sm rounded focus:ring-[#0B6F36] focus:border-[#0B6F36] block w-full p-2.5 transition-colors font-body-md shadow-sm resize-y"
+                                                                id="messaggio" name="messaggio" required=""
+                                                                rows="5"></textarea>
+                                                </div>
+                                                <div class="flex items-start mt-2">
+                                                        <div class="flex items-center h-5">
+                                                                <input aria-describedby="privacy-text"
+                                                                        class="w-4 h-4 bg-surface-container-lowest border-outline-variant rounded focus:ring-[#0B6F36] focus:ring-2 text-[#0B6F36]"
+                                                                        id="privacy" required="" type="checkbox" />
+                                                        </div>
+                                                        <div class="ml-3 text-sm">
+                                                                <label class="font-body-md text-on-surface-variant"
+                                                                        for="privacy">Ho letto e accetto la <a
+                                                                                class="text-[#0B6F36] hover:underline"
+                                                                                href="#">Privacy Policy</a> per il
+                                                                        trattamento dei dati personali. *</label>
+                                                        </div>
+                                                </div>
+                                                <div class="mt-md flex justify-end">
+                                                        <button class="bg-primary hover:bg-[#7FBF59] text-on-primary font-label-lg uppercase py-3 px-8 rounded transition-colors duration-200 focus:ring-4 focus:outline-none focus:ring-[#7FBF59]/30 flex items-center gap-2"
+                                                                type="submit">
+                                                                Invia Richiesta
+                                                                <span class="material-symbols-outlined text-sm"
+                                                                        data-icon="send">send</span>
+                                                        </button>
+                                                </div>
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+        </main>
+        <!-- Footer -->
+        <footer
+                class="bg-surface-container-lowest dark:bg-slate-950 font-['Space_Grotesk'] text-xs uppercase tracking-widest full-width border-t border-t border-outline-variant dark:border-slate-800 flat no shadows opacity-100 hover:opacity-80 transition-opacity">
+                <div
+                        class="w-full max-w-[1280px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div
+                                class="text-lg font-bold text-primary dark:text-white flex flex-col gap-2 text-center md:text-left">
+                                <span>AF Elektra 2</span>
+                                <span class="text-[10px] text-on-surface-variant font-normal normal-case">© 2024 AF
+                                        Elektra 2. P.IVA 03286600980. Eccellenza nell'Elettronica Industriale.</span>
+                        </div>
+                        <nav class="flex flex-wrap justify-center gap-6">
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Privacy Policy</a>
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Termini e Condizioni</a>
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Supporto Tecnico</a>
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Certificazioni ISO</a>
+                        </nav>
+                </div>
+        </footer>
+        <!-- Mobile Menu Script -->
+        <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                        const menuBtn = document.getElementById('mobile-menu-btn');
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        const menuIcon = document.getElementById('menu-icon');
+
+                        if(menuBtn && mobileMenu) {
+                                menuBtn.addEventListener('click', () => {
+                                        mobileMenu.classList.toggle('hidden');
+                                        if (mobileMenu.classList.contains('hidden')) {
+                                                menuIcon.textContent = 'menu';
+                                        } else {
+                                                menuIcon.textContent = 'close';
+                                        }
+                                });
+                        }
+                });
+        </script>
+</body>
+
+</html>

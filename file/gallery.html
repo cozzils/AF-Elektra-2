@@ -1,341 +1,487 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AF Elektra 2 - Case Studies</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<html class="light" lang="en">
 
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "secondary-container": "#b1f587",
-                "inverse-primary": "#81d994",
-                "surface-container-highest": "#e2e2e2",
-                "surface-variant": "#e2e2e2",
-                "primary-fixed-dim": "#81d994",
-                "on-error": "#ffffff",
-                "tertiary-container": "#9e4151",
-                "surface-container-lowest": "#ffffff",
-                "outline-variant": "#becabc",
-                "primary-container": "#0b6f36",
-                "surface-container": "#eeeeee",
-                "primary": "#005426",
-                "on-secondary-fixed": "#092100",
-                "tertiary-fixed-dim": "#ffb2bb",
-                "on-tertiary-container": "#ffcfd3",
-                "surface-bright": "#f9f9f9",
-                "surface": "#f9f9f9",
-                "on-tertiary-fixed-variant": "#7e2839",
-                "secondary-fixed": "#b1f587",
-                "surface-dim": "#dadada",
-                "on-secondary": "#ffffff",
-                "on-background": "#1a1c1c",
-                "on-secondary-fixed-variant": "#205100",
-                "on-surface-variant": "#3f493f",
-                "tertiary-fixed": "#ffd9dc",
-                "inverse-surface": "#2f3131",
-                "secondary": "#316b0c",
-                "on-surface": "#1a1c1c",
-                "error-container": "#ffdad6",
-                "on-primary-container": "#96efa8",
-                "outline": "#6f7a6f",
-                "on-tertiary-fixed": "#400011",
-                "surface-tint": "#066d34",
-                "surface-container-low": "#f3f3f4",
-                "error": "#ba1a1a",
-                "inverse-on-surface": "#f0f1f1",
-                "on-primary-fixed-variant": "#005225",
-                "tertiary": "#802a3a",
-                "background": "#f9f9f9",
-                "surface-container-high": "#e8e8e8",
-                "primary-fixed": "#9cf6ae",
-                "on-error-container": "#93000a",
-                "on-primary-fixed": "#00210b",
-                "on-primary": "#ffffff",
-                "on-secondary-container": "#377213",
-                "on-tertiary": "#ffffff",
-                "secondary-fixed-dim": "#96d86e"
-        },
-        "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
-        },
-        "spacing": {
-                "md": "16px",
-                "container-margin": "24px",
-                "gutter": "16px",
-                "xs": "4px",
-                "sm": "8px",
-                "unit": "4px",
-                "xl": "32px",
-                "lg": "24px",
-                "stack-lg": "32px",
-                "margin": "32px",
-                "stack-sm": "8px",
-                "container-max": "1280px",
-                "stack-xl": "64px",
-                "stack-md": "16px",
-                "base": "16px"
-        },
-        "fontFamily": {
-                "h3": [
-                        "Space Grotesk"
-                ],
-                "body-md": [
-                        "Space Grotesk"
-                ],
-                "body-lg": [
-                        "Space Grotesk"
-                ],
-                "h1": [
-                        "Space Grotesk"
-                ],
-                "label-sm": [
-                        "Space Grotesk"
-                ],
-                "label-lg": [
-                        "Space Grotesk"
-                ],
-                "h2": [
-                        "Space Grotesk"
-                ],
-                "body-sm": ["Space Grotesk"],
-                "mono-data": ["monospace"],
-                "label-caps": ["Space Grotesk"],
-                "headline-lg": ["Space Grotesk"],
-                "headline-md": ["Space Grotesk"],
-                "headline-xl": ["Space Grotesk"]
-        },
-        "fontSize": {
-                "h3": [
-                        "24px",
-                        {
-                                "lineHeight": "1.3",
-                                "fontWeight": "600"
-                        }
-                ],
-                "body-md": [
-                        "16px",
-                        {
-                                "lineHeight": "1.5",
-                                "fontWeight": "400"
-                        }
-                ],
-                "body-lg": [
-                        "18px",
-                        {
-                                "lineHeight": "1.5",
-                                "fontWeight": "400"
-                        }
-                ],
-                "h1": [
-                        "40px",
-                        {
-                                "lineHeight": "1.2",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "700"
-                        }
-                ],
-                "label-sm": [
-                        "12px",
-                        {
-                                "lineHeight": "1.2",
-                                "fontWeight": "500"
-                        }
-                ],
-                "label-lg": [
-                        "14px",
-                        {
-                                "lineHeight": "1.2",
-                                "fontWeight": "600"
-                        }
-                ],
-                "h2": [
-                        "32px",
-                        {
-                                "lineHeight": "1.2",
-                                "letterSpacing": "-0.01em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
-                "mono-data": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500" }],
-                "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-                "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }],
-                "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
-        }
-},
-    },
-  }
-</script>
-    <link rel="stylesheet" href="../static/css/style.css">
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>AF Elektra 2 - Casi di Studio</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "secondary-container": "#b1f587",
+                                                "inverse-primary": "#81d994",
+                                                "surface-container-highest": "#e2e2e2",
+                                                "surface-variant": "#e2e2e2",
+                                                "primary-fixed-dim": "#81d994",
+                                                "on-error": "#ffffff",
+                                                "tertiary-container": "#9e4151",
+                                                "surface-container-lowest": "#ffffff",
+                                                "outline-variant": "#becabc",
+                                                "primary-container": "#0b6f36",
+                                                "surface-container": "#eeeeee",
+                                                "primary": "#005426",
+                                                "on-secondary-fixed": "#092100",
+                                                "tertiary-fixed-dim": "#ffb2bb",
+                                                "on-tertiary-container": "#ffcfd3",
+                                                "surface-bright": "#f9f9f9",
+                                                "surface": "#f9f9f9",
+                                                "on-tertiary-fixed-variant": "#7e2839",
+                                                "secondary-fixed": "#b1f587",
+                                                "surface-dim": "#dadada",
+                                                "on-secondary": "#ffffff",
+                                                "on-background": "#1a1c1c",
+                                                "on-secondary-fixed-variant": "#205100",
+                                                "on-surface-variant": "#3f493f",
+                                                "tertiary-fixed": "#ffd9dc",
+                                                "inverse-surface": "#2f3131",
+                                                "secondary": "#316b0c",
+                                                "on-surface": "#1a1c1c",
+                                                "error-container": "#ffdad6",
+                                                "on-primary-container": "#96efa8",
+                                                "outline": "#6f7a6f",
+                                                "on-tertiary-fixed": "#400011",
+                                                "surface-tint": "#066d34",
+                                                "surface-container-low": "#f3f3f4",
+                                                "error": "#ba1a1a",
+                                                "inverse-on-surface": "#f0f1f1",
+                                                "on-primary-fixed-variant": "#005225",
+                                                "tertiary": "#802a3a",
+                                                "background": "#f9f9f9",
+                                                "surface-container-high": "#e8e8e8",
+                                                "primary-fixed": "#9cf6ae",
+                                                "on-error-container": "#93000a",
+                                                "on-primary-fixed": "#00210b",
+                                                "on-primary": "#ffffff",
+                                                "on-secondary-container": "#377213",
+                                                "on-tertiary": "#ffffff",
+                                                "secondary-fixed-dim": "#96d86e"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "md": "16px",
+                                                "container-margin": "24px",
+                                                "gutter": "16px",
+                                                "xs": "4px",
+                                                "sm": "8px",
+                                                "unit": "4px",
+                                                "xl": "32px",
+                                                "lg": "24px",
+                                                "stack-lg": "32px",
+                                                "margin": "32px",
+                                                "stack-sm": "8px",
+                                                "container-max": "1280px",
+                                                "stack-xl": "64px",
+                                                "stack-md": "16px",
+                                                "base": "16px"
+                                        },
+                                        "fontFamily": {
+                                                "h3": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "body-md": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "body-lg": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "h1": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "label-sm": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "label-lg": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "h2": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "body-sm": ["Space Grotesk"],
+                                                "mono-data": ["monospace"],
+                                                "label-caps": ["Space Grotesk"],
+                                                "headline-lg": ["Space Grotesk"],
+                                                "headline-md": ["Space Grotesk"],
+                                                "headline-xl": ["Space Grotesk"]
+                                        },
+                                        "fontSize": {
+                                                "h3": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "1.3",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "1.5",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "1.5",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "h1": [
+                                                        "40px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "label-lg": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "h2": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                                                "mono-data": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500" }],
+                                                "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                                                "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                                                "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }],
+                                                "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <link rel="stylesheet" href="../static/css/style.css">
 </head>
-<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- TopAppBar Shared Component -->
-<header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50 w-full">
-<div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-6 h-16">
-<div class="text-xl font-black text-primary dark:text-white tracking-tighter">
-                AF Elektra 2
-            </div>
-<nav class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] font-medium tracking-tight">
-<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 px-2 py-1 rounded" href="../index.html">Home</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 px-2 py-1 rounded" href="chi-siamo.html">Chi Siamo</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 px-2 py-1 rounded" href="catalogo.html">Catalogo</a>
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 px-2 mt-1" href="gallery.html">Case Studies</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 px-2 py-1 rounded" href="contatti.html">Contatti</a>
-</nav>
-<div class="flex items-center gap-4 font-['Space_Grotesk'] font-medium tracking-tight">
-<button class="hidden lg:block text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200">Login</button>
-<button class="bg-[#0B6F36] text-white px-4 py-2 hover:bg-[#7FBF59] transition-colors duration-200 active:scale-95 text-sm uppercase tracking-wider font-bold">Richiedi Preventivo</button>
-</div>
-</div>
-</header>
-<!-- Main Content Canvas -->
-<main class="flex-grow flex flex-col">
-<!-- Hero Section -->
-<section class="w-full max-w-container-max mx-auto px-gutter pt-stack-xl pb-stack-lg flex flex-col gap-stack-md">
-<div class="flex items-center gap-2 text-primary font-label-caps text-label-caps uppercase tracking-widest">
-<span class="material-symbols-outlined text-[18px]">engineering</span>
-<span>Technical Archive</span>
-</div>
-<h1 class="font-headline-xl text-headline-xl text-primary max-w-3xl">Engineered Solutions &amp; Case Studies</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-                A rigorous examination of our applied methodologies in Quadristica Industriale, Master PCB realization, and PLC logic design. We build resilient systems for complex industrial environments.
-            </p>
-</section>
-<!-- Structural Divider -->
-<div class="w-full max-w-container-max mx-auto px-gutter">
-<div class="w-full border-t border-outline-variant/50"></div>
-</div>
-<!-- Bento Grid Gallery -->
-<section class="w-full max-w-container-max mx-auto px-gutter py-stack-lg">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Case Study 1: Quadristica (Spans 2 columns on large screens) -->
-<article class="col-span-1 lg:col-span-2 bg-surface-container-lowest border border-outline-variant flex flex-col group hover:border-secondary transition-colors duration-300">
-<div class="w-full h-64 lg:h-80 bg-surface-variant overflow-hidden relative border-b border-outline-variant">
-<img alt="Industrial Panel" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" data-alt="A hyper-realistic, brightly lit photograph of a complex industrial electrical control panel (quadristica industriale) inside a clean, modern manufacturing facility. The panel is open, revealing immaculately organized, color-coded wiring, contactors, and PLCs arranged with geometric precision. The lighting is cold, technical, and shadowless, emphasizing the pristine white and deep blue tones of the corporate aesthetic, conveying reliability and high-end engineering." src="../static/images/image_9.jpg"/>
-<div class="absolute top-4 left-4 bg-surface-container-highest border border-outline-variant px-3 py-1 font-label-caps text-label-caps text-on-surface uppercase flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-                            Quadristica Industriale
+
+<body
+        class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container">
+        <!-- TopAppBar Shared Component -->
+        <header
+                class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50 w-full">
+                <div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-6 h-16 relative">
+                        <div class="text-xl font-black text-primary dark:text-white tracking-tighter">
+                                AF Elektra 2
                         </div>
-</div>
-<div class="p-gutter flex flex-col gap-base flex-grow">
-<h2 class="font-headline-md text-headline-md text-primary">High-Voltage Distribution Panel for Automated Logistics</h2>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
-                            Engineered a custom switchgear solution to handle aggressively fluctuating power demands in a 24/7 automated warehouse facility. Implemented redundant safety protocols, integrated active thermal monitoring, and ensured rigid compliance with IEC 61439 standards to guarantee zero operational downtime.
-                        </p>
-<!-- Technical Specs Grid -->
-<div class="grid grid-cols-2 gap-4 mt-stack-md pt-base border-t border-outline-variant/30 bg-surface-bright p-4">
-<div class="flex flex-col gap-1">
-<span class="font-label-caps text-label-caps text-outline">Peak Load</span>
-<span class="font-mono-data text-mono-data text-primary">1250A / 400V</span>
-</div>
-<div class="flex flex-col gap-1">
-<span class="font-label-caps text-label-caps text-outline">Protocol</span>
-<span class="font-mono-data text-mono-data text-primary">Modbus TCP/IP</span>
-</div>
-</div>
-</div>
-</article>
-<!-- Case Study 2: Master Realization -->
-<article class="col-span-1 bg-surface-container-lowest border border-outline-variant flex flex-col group hover:border-secondary transition-colors duration-300">
-<div class="w-full h-48 bg-surface-variant overflow-hidden relative border-b border-outline-variant">
-<img alt="PCB Board" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" data-alt="A macro, extreme close-up photograph of a highly complex, multi-layer printed circuit board (PCB) master. The traces and vias are perfectly visible, forming an intricate, mathematical labyrinth. The board is illuminated by bright, cool white LED lighting, highlighting the gold-plated contacts and crisp white silkscreen against a deep, dark blue background. The overall mood is one of extreme precision, micro-engineering, and technological sophistication." src="../static/images/image_10.jpg"/>
-<div class="absolute top-4 left-4 bg-surface-container-highest border border-outline-variant px-3 py-1 font-label-caps text-label-caps text-on-surface uppercase flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-secondary"></span>
-                            Master Realization
+                        <nav
+                                class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] font-medium tracking-tight">
+                                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 px-2 py-1 rounded"
+                                        href="../index.html">Home</a>
+                                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 px-2 py-1 rounded"
+                                        href="chi-siamo.html">Chi Siamo</a>
+                                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 px-2 py-1 rounded"
+                                        href="catalogo.html">Catalogo</a>
+                                <a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 active:scale-95 px-2 mt-1"
+                                        href="gallery.html">Casi di Studio</a>
+                                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 px-2 py-1 rounded"
+                                        href="contatti.html">Contatti</a>
+                        </nav>
+                        <div class="flex items-center gap-4 font-['Space_Grotesk'] font-medium tracking-tight">
+                                <button
+                                        class="hidden lg:block text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200">Login</button>
+                                <button
+                                        class="hidden md:block bg-[#0B6F36] text-white px-4 py-2 hover:bg-[#7FBF59] transition-colors duration-200 active:scale-95 text-sm uppercase tracking-wider font-bold">Richiedi
+                                        Preventivo</button>
+                                <!-- Hamburger Menu Button -->
+                                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-slate-600 hover:bg-slate-50 rounded-md transition-colors">
+                                        <span class="material-symbols-outlined text-[28px]" id="menu-icon">menu</span>
+                                </button>
                         </div>
-</div>
-<div class="p-gutter flex flex-col gap-base flex-grow">
-<h2 class="font-headline-md text-headline-md text-primary text-xl">High-Density PCB for Medical Diagnostics</h2>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow text-sm">
-                            Designed a 12-layer printed circuit board master adhering to strict ISO 13485 medical grade standards. Solved extreme electromagnetic interference (EMI) challenges through mathematically precise trace routing and specialized isolated grounding planes.
-                        </p>
-<div class="grid grid-cols-2 gap-4 mt-auto pt-base border-t border-outline-variant/30 bg-surface-bright p-4">
-<div class="flex flex-col gap-1">
-<span class="font-label-caps text-label-caps text-outline">Layers</span>
-<span class="font-mono-data text-mono-data text-primary">12-Layer FR4</span>
-</div>
-<div class="flex flex-col gap-1">
-<span class="font-label-caps text-label-caps text-outline">Tolerance</span>
-<span class="font-mono-data text-mono-data text-primary">±0.05mm</span>
-</div>
-</div>
-</div>
-</article>
-<!-- Case Study 3: PLC Programming -->
-<article class="col-span-1 bg-surface-container-lowest border border-outline-variant flex flex-col group hover:border-secondary transition-colors duration-300">
-<div class="w-full h-48 bg-surface-variant overflow-hidden relative border-b border-outline-variant">
-<img alt="Robotic Assembly" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" data-alt="A sleek, industrial setting showing an automated robotic arm interacting with a conveyor belt system, controlled by a glowing PLC interface panel. The scene is brightly lit with high-key lighting, maintaining a clean, white, and deep blue corporate aesthetic. The focus is on the sophisticated machinery and the digital display showing lines of code or technical schematics, representing advanced industrial automation and precise control systems." src="../static/images/image_11.jpg"/>
-<div class="absolute top-4 left-4 bg-surface-container-highest border border-outline-variant px-3 py-1 font-label-caps text-label-caps text-on-surface uppercase flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-[#7FBF59]"></span>
-                            PLC Programming
+                </div>
+                <!-- Mobile Nav Dropdown -->
+                <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 absolute w-full left-0 shadow-lg z-40">
+                        <nav class="flex flex-col px-6 py-4 gap-4 font-['Space_Grotesk']">
+                                <a class="text-slate-600 text-lg hover:bg-slate-50 dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="../index.html">Home</a>
+                                <a class="text-slate-600 text-lg hover:bg-slate-50 dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="chi-siamo.html">Chi Siamo</a>
+                                <a class="text-slate-600 text-lg hover:bg-slate-50 dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="catalogo.html">Catalogo</a>
+                                <a class="text-primary font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="gallery.html">Casi di Studio</a>
+                                <a class="text-slate-600 text-lg hover:bg-slate-50 dark:hover:bg-slate-800 p-2 rounded transition-colors"
+                                        href="contatti.html">Contatti</a>
+                                <button class="w-full bg-[#0B6F36] text-white px-6 py-3 rounded font-bold hover:opacity-90 active:scale-95 transition-all mt-2 uppercase tracking-wider text-sm">
+                                        Richiedi Preventivo
+                                </button>
+                        </nav>
+                </div>
+        </header>
+        <!-- Main Content Canvas -->
+        <main class="flex-grow flex flex-col">
+                <!-- Hero Section -->
+                <section
+                        class="w-full max-w-container-max mx-auto px-gutter pt-stack-xl pb-stack-lg flex flex-col gap-stack-md">
+                        <div
+                                class="flex items-center gap-2 text-primary font-label-caps text-label-caps uppercase tracking-widest">
+                                <span class="material-symbols-outlined text-[18px]">engineering</span>
+                                <span>Archivio Tecnico</span>
                         </div>
-</div>
-<div class="p-gutter flex flex-col gap-base flex-grow">
-<h2 class="font-headline-md text-headline-md text-primary text-xl">Multi-Axis Robotic Assembly Cell Logic</h2>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow text-sm">
-                            Developed deterministic PLC control logic for a synchronized 6-axis robotic assembly cell. Reduced mechanical cycle time by 18% by optimizing acceleration profiles and implementing real-time collision avoidance algorithms via high-speed EtherCAT networks.
+                        <h1 class="font-headline-xl text-headline-xl text-primary max-w-3xl">Soluzioni Ingegnerizzate e
+                                Casi di Studio</h1>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                                Un esame rigoroso delle nostre metodologie applicate in Quadristica Industriale,
+                                realizzazione Master PCB e progettazione logica PLC. Costruiamo sistemi resilienti per
+                                ambienti industriali complessi.
                         </p>
-<div class="grid grid-cols-2 gap-4 mt-auto pt-base border-t border-outline-variant/30 bg-surface-bright p-4">
-<div class="flex flex-col gap-1">
-<span class="font-label-caps text-label-caps text-outline">Platform</span>
-<span class="font-mono-data text-mono-data text-primary">Siemens S7-1500</span>
-</div>
-<div class="flex flex-col gap-1">
-<span class="font-label-caps text-label-caps text-outline">Bus Speed</span>
-<span class="font-mono-data text-mono-data text-primary">100 Mbps</span>
-</div>
-</div>
-</div>
-</article>
-<!-- Case Study 4: Combined System (Example of a smaller card filling the grid) -->
-<article class="col-span-1 lg:col-span-3 bg-surface-container-lowest border border-outline-variant flex flex-col md:flex-row group hover:border-secondary transition-colors duration-300 items-stretch">
-<div class="w-full md:w-1/3 bg-surface-variant overflow-hidden relative border-b md:border-b-0 md:border-r border-outline-variant flex-shrink-0">
-<img alt="Server Room" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 min-h-[200px]" data-alt="A pristine, highly organized data center or server room showing rows of immaculate equipment racks. The lighting is intensely clean and white, with subtle blue LED indicators glowing from the machinery. The perspective is highly geometric, emphasizing vanishing lines and strict order, perfectly aligning with a corporate, mathematical aesthetic focused on B2B reliability and technical transparency." src="../static/images/image_12.jpg"/>
-</div>
-<div class="p-gutter flex flex-col justify-center gap-base flex-grow">
-<div class="flex items-center gap-2 mb-2">
-<span class="bg-surface-container-highest border border-outline-variant px-2 py-0.5 font-label-caps text-label-caps text-on-surface uppercase inline-block">Integrated System</span>
-</div>
-<h2 class="font-headline-md text-headline-md text-primary">Turnkey Retrofit for Legacy Textile Machinery</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
-                            A complete end-to-end overhaul of a 1990s textile manufacturing line. We reverse-engineered the obsolete control mechanisms, designed a new multi-layer PCB master to interface with modern sensors, constructed the physical control panels (Quadristica), and authored a unified PLC software architecture to bring the legacy hardware into the Industry 4.0 ecosystem.
-                        </p>
-<div class="flex items-center gap-4 mt-4">
-<a class="font-label-caps text-label-caps text-secondary uppercase tracking-widest hover:text-primary transition-colors flex items-center gap-1 group-hover:underline underline-offset-4" href="#">
-                                View Full Report <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-</div>
-</article>
-</div>
-</section>
-</main>
-<!-- Footer Shared Component -->
-<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 mt-auto">
-<div class="w-full max-w-[1280px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6 text-primary dark:text-primary-fixed">
-<div class="text-lg font-bold text-primary dark:text-white">
-                AF Elektra 2
-            </div>
-<div class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-center md:text-left">
-                © 2024 AF Elektra 2. P.IVA 01234567890. Eccellenza nell'Elettronica Industriale.
-            </div>
-<nav class="flex flex-wrap justify-center gap-6 font-['Space_Grotesk'] text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400 opacity-100 hover:opacity-80 transition-opacity">
-<a class="hover:text-primary dark:hover:text-primary-fixed underline underline-offset-4" href="#">Privacy Policy</a>
-<a class="hover:text-primary dark:hover:text-primary-fixed underline underline-offset-4" href="#">Termini e Condizioni</a>
-<a class="hover:text-primary dark:hover:text-primary-fixed underline underline-offset-4" href="#">Supporto Tecnico</a>
-<a class="hover:text-primary dark:hover:text-primary-fixed underline underline-offset-4" href="#">Certificazioni ISO</a>
-</nav>
-</div>
-</footer>
-</body></html>
+                </section>
+                <!-- Structural Divider -->
+                <div class="w-full max-w-container-max mx-auto px-gutter">
+                        <div class="w-full border-t border-outline-variant/50"></div>
+                </div>
+                <!-- Bento Grid Gallery -->
+                <section class="w-full max-w-container-max mx-auto px-gutter py-stack-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                                <!-- Case Study 1: Quadristica (Spans 2 columns on large screens) -->
+                                <article
+                                        class="col-span-1 lg:col-span-2 bg-surface-container-lowest border border-outline-variant flex flex-col group hover:border-secondary transition-colors duration-300">
+                                        <div
+                                                class="w-full h-64 lg:h-80 bg-surface-variant overflow-hidden relative border-b border-outline-variant">
+                                                <img alt="Industrial Panel"
+                                                        class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                                                        data-alt="A hyper-realistic, brightly lit photograph of a complex industrial electrical control panel (quadristica industriale) inside a clean, modern manufacturing facility. The panel is open, revealing immaculately organized, color-coded wiring, contactors, and PLCs arranged with geometric precision. The lighting is cold, technical, and shadowless, emphasizing the pristine white and deep blue tones of the corporate aesthetic, conveying reliability and high-end engineering."
+                                                        src="../static/images/image_9.jpg" />
+                                                <div
+                                                        class="absolute top-4 left-4 bg-surface-container-highest border border-outline-variant px-3 py-1 font-label-caps text-label-caps text-on-surface uppercase flex items-center gap-2">
+                                                        <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                                        Quadristica Industriale
+                                                </div>
+                                        </div>
+                                        <div class="p-gutter flex flex-col gap-base flex-grow">
+                                                <h2 class="font-headline-md text-headline-md text-primary">Quadro di
+                                                        Distribuzione ad Alta Tensione per Logistica Automatizzata</h2>
+                                                <p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                                                        Progettata una soluzione di quadri elettrici personalizzata per
+                                                        gestire richieste di potenza fortemente fluttuanti in una
+                                                        struttura di magazzino automatizzato 24/7. Implementati
+                                                        protocolli di sicurezza ridondanti, integrato monitoraggio
+                                                        termico attivo e garantita la rigida conformità agli standard
+                                                        IEC 61439 per assicurare zero tempi di inattività operativa.
+                                                </p>
+                                                <!-- Technical Specs Grid -->
+                                                <div
+                                                        class="grid grid-cols-2 gap-4 mt-stack-md pt-base border-t border-outline-variant/30 bg-surface-bright p-4">
+                                                        <div class="flex flex-col gap-1">
+                                                                <span
+                                                                        class="font-label-caps text-label-caps text-outline">Carico
+                                                                        Massimo</span>
+                                                                <span
+                                                                        class="font-mono-data text-mono-data text-primary">1250A
+                                                                        / 400V</span>
+                                                        </div>
+                                                        <div class="flex flex-col gap-1">
+                                                                <span
+                                                                        class="font-label-caps text-label-caps text-outline">Protocollo</span>
+                                                                <span
+                                                                        class="font-mono-data text-mono-data text-primary">Modbus
+                                                                        TCP/IP</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </article>
+                                <!-- Case Study 2: Master Realization -->
+                                <article
+                                        class="col-span-1 bg-surface-container-lowest border border-outline-variant flex flex-col group hover:border-secondary transition-colors duration-300">
+                                        <div
+                                                class="w-full h-48 bg-surface-variant overflow-hidden relative border-b border-outline-variant">
+                                                <img alt="PCB Board"
+                                                        class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                                                        data-alt="A macro, extreme close-up photograph of a highly complex, multi-layer printed circuit board (PCB) master. The traces and vias are perfectly visible, forming an intricate, mathematical labyrinth. The board is illuminated by bright, cool white LED lighting, highlighting the gold-plated contacts and crisp white silkscreen against a deep, dark blue background. The overall mood is one of extreme precision, micro-engineering, and technological sophistication."
+                                                        src="../static/images/image_10.jpg" />
+                                                <div
+                                                        class="absolute top-4 left-4 bg-surface-container-highest border border-outline-variant px-3 py-1 font-label-caps text-label-caps text-on-surface uppercase flex items-center gap-2">
+                                                        <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                                                        Master Realization
+                                                </div>
+                                        </div>
+                                        <div class="p-gutter flex flex-col gap-base flex-grow">
+                                                <h2 class="font-headline-md text-headline-md text-primary text-xl">PCB
+                                                        ad Alta Densità per Diagnostica Medica</h2>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant flex-grow text-sm">
+                                                        Progettato un master per circuiti stampati a 12 strati in
+                                                        conformità ai severi standard medici ISO 13485. Risolte sfide di
+                                                        interferenza elettromagnetica (EMI) estreme attraverso un
+                                                        routing delle tracce matematicamente preciso e piani di massa
+                                                        isolati specializzati.
+                                                </p>
+                                                <div
+                                                        class="grid grid-cols-2 gap-4 mt-auto pt-base border-t border-outline-variant/30 bg-surface-bright p-4">
+                                                        <div class="flex flex-col gap-1">
+                                                                <span
+                                                                        class="font-label-caps text-label-caps text-outline">Strati</span>
+                                                                <span
+                                                                        class="font-mono-data text-mono-data text-primary">12-Layer
+                                                                        FR4</span>
+                                                        </div>
+                                                        <div class="flex flex-col gap-1">
+                                                                <span
+                                                                        class="font-label-caps text-label-caps text-outline">Tolleranza</span>
+                                                                <span
+                                                                        class="font-mono-data text-mono-data text-primary">±0.05mm</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </article>
+                                <!-- Case Study 3: PLC Programming -->
+                                <article
+                                        class="col-span-1 bg-surface-container-lowest border border-outline-variant flex flex-col group hover:border-secondary transition-colors duration-300">
+                                        <div
+                                                class="w-full h-48 bg-surface-variant overflow-hidden relative border-b border-outline-variant">
+                                                <img alt="Robotic Assembly"
+                                                        class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                                                        data-alt="A sleek, industrial setting showing an automated robotic arm interacting with a conveyor belt system, controlled by a glowing PLC interface panel. The scene is brightly lit with high-key lighting, maintaining a clean, white, and deep blue corporate aesthetic. The focus is on the sophisticated machinery and the digital display showing lines of code or technical schematics, representing advanced industrial automation and precise control systems."
+                                                        src="../static/images/image_11.jpg" />
+                                                <div
+                                                        class="absolute top-4 left-4 bg-surface-container-highest border border-outline-variant px-3 py-1 font-label-caps text-label-caps text-on-surface uppercase flex items-center gap-2">
+                                                        <span class="w-2 h-2 rounded-full bg-[#7FBF59]"></span>
+                                                        Programmazione PLC
+                                                </div>
+                                        </div>
+                                        <div class="p-gutter flex flex-col gap-base flex-grow">
+                                                <h2 class="font-headline-md text-headline-md text-primary text-xl">
+                                                        Logica per Cella di Assemblaggio Robotica Multi-Asse</h2>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant flex-grow text-sm">
+                                                        Sviluppata logica di controllo PLC deterministica per una cella
+                                                        di assemblaggio robotica sincronizzata a 6 assi. Ridotto il
+                                                        tempo di ciclo meccanico del 18% ottimizzando i profili di
+                                                        accelerazione e implementando algoritmi di prevenzione delle
+                                                        collisioni in tempo reale tramite reti EtherCAT ad alta
+                                                        velocità.
+                                                </p>
+                                                <div
+                                                        class="grid grid-cols-2 gap-4 mt-auto pt-base border-t border-outline-variant/30 bg-surface-bright p-4">
+                                                        <div class="flex flex-col gap-1">
+                                                                <span
+                                                                        class="font-label-caps text-label-caps text-outline">Piattaforma</span>
+                                                                <span
+                                                                        class="font-mono-data text-mono-data text-primary">Siemens
+                                                                        S7-1500</span>
+                                                        </div>
+                                                        <div class="flex flex-col gap-1">
+                                                                <span
+                                                                        class="font-label-caps text-label-caps text-outline">Velocità
+                                                                        Bus</span>
+                                                                <span
+                                                                        class="font-mono-data text-mono-data text-primary">100
+                                                                        Mbps</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </article>
+                                <!-- Case Study 4: Combined System (Example of a smaller card filling the grid) -->
+                                <article
+                                        class="col-span-1 lg:col-span-3 bg-surface-container-lowest border border-outline-variant flex flex-col md:flex-row group hover:border-secondary transition-colors duration-300 items-stretch">
+                                        <div
+                                                class="w-full md:w-1/3 bg-surface-variant overflow-hidden relative border-b md:border-b-0 md:border-r border-outline-variant flex-shrink-0">
+                                                <img alt="Server Room"
+                                                        class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 min-h-[200px]"
+                                                        data-alt="A pristine, highly organized data center or server room showing rows of immaculate equipment racks. The lighting is intensely clean and white, with subtle blue LED indicators glowing from the machinery. The perspective is highly geometric, emphasizing vanishing lines and strict order, perfectly aligning with a corporate, mathematical aesthetic focused on B2B reliability and technical transparency."
+                                                        src="../static/images/image_12.jpg" />
+                                        </div>
+                                        <div class="p-gutter flex flex-col justify-center gap-base flex-grow">
+                                                <div class="flex items-center gap-2 mb-2">
+                                                        <span
+                                                                class="bg-surface-container-highest border border-outline-variant px-2 py-0.5 font-label-caps text-label-caps text-on-surface uppercase inline-block">Sistema
+                                                                Integrato</span>
+                                                </div>
+                                                <h2 class="font-headline-md text-headline-md text-primary">Retrofit
+                                                        Chiavi in Mano per Macchinari Tessili Legacy</h2>
+                                                <p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+                                                        Una revisione end-to-end completa di una linea di produzione
+                                                        tessile degli anni '90. Abbiamo effettuato il
+                                                        reverse-engineering dei meccanismi di controllo obsoleti,
+                                                        progettato un nuovo master PCB multistrato per interfacciarsi
+                                                        con sensori moderni, costruito i quadri di controllo fisici
+                                                        (Quadristica) e creato un'architettura software PLC unificata
+                                                        per portare l'hardware legacy nell'ecosistema dell'Industria
+                                                        4.0.
+                                                </p>
+                                                <div class="flex items-center gap-4 mt-4">
+                                                        <a class="font-label-caps text-label-caps text-secondary uppercase tracking-widest hover:text-primary transition-colors flex items-center gap-1 group-hover:underline underline-offset-4"
+                                                                href="#">
+                                                                Vedi Report Completo <span
+                                                                        class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </article>
+                        </div>
+                </section>
+        </main>
+        <!-- Footer Shared Component -->
+        <footer
+                class="bg-surface-container-lowest dark:bg-slate-950 font-['Space_Grotesk'] text-xs uppercase tracking-widest full-width border-t border-t border-outline-variant dark:border-slate-800 flat no shadows opacity-100 hover:opacity-80 transition-opacity">
+                <div
+                        class="w-full max-w-[1280px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div
+                                class="text-lg font-bold text-primary dark:text-white flex flex-col gap-2 text-center md:text-left">
+                                <span>AF Elektra 2</span>
+                                <span class="text-[10px] text-on-surface-variant font-normal normal-case">© 2024 AF
+                                        Elektra 2. P.IVA 03286600980. Eccellenza nell'Elettronica Industriale.</span>
+                        </div>
+                        <nav class="flex flex-wrap justify-center gap-6">
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Privacy Policy</a>
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Termini e Condizioni</a>
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Supporto Tecnico</a>
+                                <a class="text-on-surface-variant dark:text-slate-400 hover:text-primary-container dark:hover:text-blue-300 underline underline-offset-4"
+                                        href="#">Certificazioni ISO</a>
+                        </nav>
+                </div>
+        </footer>
+        <!-- Mobile Menu Script -->
+        <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                        const menuBtn = document.getElementById('mobile-menu-btn');
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        const menuIcon = document.getElementById('menu-icon');
+
+                        if(menuBtn && mobileMenu) {
+                                menuBtn.addEventListener('click', () => {
+                                        mobileMenu.classList.toggle('hidden');
+                                        if (mobileMenu.classList.contains('hidden')) {
+                                                menuIcon.textContent = 'menu';
+                                        } else {
+                                                menuIcon.textContent = 'close';
+                                        }
+                                });
+                        }
+                });
+        </script>
+</body>
+
+</html>
