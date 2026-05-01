@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chi Siamo - AF Elektra 2</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "secondary-container": "#b1f587",
+                "inverse-primary": "#81d994",
+                "surface-container-highest": "#e2e2e2",
+                "surface-variant": "#e2e2e2",
+                "primary-fixed-dim": "#81d994",
+                "on-error": "#ffffff",
+                "tertiary-container": "#9e4151",
+                "surface-container-lowest": "#ffffff",
+                "outline-variant": "#becabc",
+                "primary-container": "#0b6f36",
+                "surface-container": "#eeeeee",
+                "primary": "#005426",
+                "on-secondary-fixed": "#092100",
+                "tertiary-fixed-dim": "#ffb2bb",
+                "on-tertiary-container": "#ffcfd3",
+                "surface-bright": "#f9f9f9",
+                "surface": "#f9f9f9",
+                "on-tertiary-fixed-variant": "#7e2839",
+                "secondary-fixed": "#b1f587",
+                "surface-dim": "#dadada",
+                "on-secondary": "#ffffff",
+                "on-background": "#1a1c1c",
+                "on-secondary-fixed-variant": "#205100",
+                "on-surface-variant": "#3f493f",
+                "tertiary-fixed": "#ffd9dc",
+                "inverse-surface": "#2f3131",
+                "secondary": "#316b0c",
+                "on-surface": "#1a1c1c",
+                "error-container": "#ffdad6",
+                "on-primary-container": "#96efa8",
+                "outline": "#6f7a6f",
+                "on-tertiary-fixed": "#400011",
+                "surface-tint": "#066d34",
+                "surface-container-low": "#f3f3f4",
+                "error": "#ba1a1a",
+                "inverse-on-surface": "#f0f1f1",
+                "on-primary-fixed-variant": "#005225",
+                "tertiary": "#802a3a",
+                "background": "#f9f9f9",
+                "surface-container-high": "#e8e8e8",
+                "primary-fixed": "#9cf6ae",
+                "on-error-container": "#93000a",
+                "on-primary-fixed": "#00210b",
+                "on-primary": "#ffffff",
+                "on-secondary-container": "#377213",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed-dim": "#96d86e"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "md": "16px",
+                "container-margin": "24px",
+                "gutter": "16px",
+                "xs": "4px",
+                "sm": "8px",
+                "unit": "4px",
+                "xl": "32px",
+                "lg": "24px"
+        },
+        "fontFamily": {
+                "h3": [
+                        "Space Grotesk"
+                ],
+                "body-md": [
+                        "Space Grotesk"
+                ],
+                "body-lg": [
+                        "Space Grotesk"
+                ],
+                "h1": [
+                        "Space Grotesk"
+                ],
+                "label-sm": [
+                        "Space Grotesk"
+                ],
+                "label-lg": [
+                        "Space Grotesk"
+                ],
+                "h2": [
+                        "Space Grotesk"
+                ]
+        },
+        "fontSize": {
+                "h3": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ],
+                "h1": [
+                        "40px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "500"
+                        }
+                ],
+                "label-lg": [
+                        "14px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "h2": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-white dark:bg-slate-900 docked full-width top-0 border-b border-b border-slate-200 dark:border-slate-800 flat no shadows sticky z-50">
+<div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-6 h-16">
+<div class="text-xl font-black text-primary dark:text-white tracking-tighter">
+                AF Elektra 2
+            </div>
+<nav class="hidden md:flex items-center gap-6 font-['Space_Grotesk'] font-medium tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 px-2 py-1 rounded" href="../index.html">Home</a>
+<a class="text-primary-container dark:text-primary-fixed border-b-2 border-primary-container pb-1 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 px-2 rounded-t" href="chi-siamo.html">Chi Siamo</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 px-2 py-1 rounded" href="catalogo.html">Catalogo</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 px-2 py-1 rounded" href="gallery.html">Case Studies</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 px-2 py-1 rounded" href="contatti.html">Contatti</a>
+</nav>
+<div class="flex items-center gap-4 font-['Space_Grotesk'] font-medium tracking-tight">
+<button class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary-fixed active:scale-95 duration-100 hidden md:block">
+                    Login
+                </button>
+<button class="bg-primary-container text-white px-4 py-2 rounded font-semibold active:scale-95 duration-100 shadow-sm hover:opacity-90">
+                    Richiedi Preventivo
+                </button>
+</div>
+</div>
+</header>
+<main class="w-full max-w-[1280px] mx-auto px-6 py-xl flex flex-col gap-xl">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="flex flex-col gap-md">
+<span class="font-label-sm text-label-sm uppercase text-on-tertiary-container uppercase tracking-widest">Eccellenza nell'Elettronica Industriale</span>
+<h1 class="font-h1 text-h1 text-primary">Ingegneria di precisione, dal 2019.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Nata a Brescia dall'unione di decenni di esperienza sul campo, AF Elektra 2 rappresenta l'evoluzione dell'automazione industriale. Progettiamo e realizziamo soluzioni tecnologiche robuste, scalabili e orientate alle massime prestazioni.
+                </p>
+</div>
+<div class="h-80 w-full rounded-lg bg-surface-container-high border border-outline-variant overflow-hidden relative">
+<img alt="Industrial electronics laboratory" class="w-full h-full object-cover mix-blend-multiply opacity-90" data-alt="A brightly lit, modern industrial electronics laboratory workspace. High-tech testing equipment, oscilloscopes, and cleanly routed circuit boards rest on a pristine white anti-static workbench. The lighting is clinical and high-key, creating a professional B2B aesthetic with sharp contrasts. The color palette features stark whites, deep structural blacks, and subtle accents of technological cyan and deep blue, conveying precision and expertise." src="../static/images/image_3.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
+</div>
+</section>
+<!-- History Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="md:col-span-1 bg-surface-container-lowest border border-outline-variant rounded-lg p-gutter flex flex-col gap-md justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-2 block" data-icon="history" data-weight="fill">history</span>
+<h2 class="font-h2 text-h2 text-primary">Le Radici</h2>
+</div>
+<div>
+<p class="font-h1 text-h1 text-primary mb-1">40 Anni</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Di competenza cumulativa nel settore quadristico ed elettronico sul territorio bresciano.</p>
+</div>
+</div>
+<div class="md:col-span-2 bg-surface-container-lowest border border-outline-variant rounded-lg p-gutter flex flex-col justify-center">
+<h3 class="font-h3 text-h3 text-primary mb-4">L'Evoluzione AF Elektra 2</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    Ufficialmente fondata nel 2019, l'azienda eredita oltre 30 anni di know-how specifico dai suoi fondatori. Questa solida base storica ci permette di affrontare le sfide dell'Industria 4.0 con una profonda comprensione delle logiche costruttive tradizionali, integrate con le più moderne tecnologie di automazione e controllo.
+                </p>
+<div class="flex gap-4 items-center">
+<span class="bg-surface-variant px-3 py-1 rounded font-label-sm text-label-sm font-mono text-on-surface">Sede: Brescia, IT</span>
+<span class="bg-surface-variant px-3 py-1 rounded font-label-sm text-label-sm font-mono text-on-surface">Fondazione: 2019</span>
+</div>
+</div>
+</section>
+<!-- Specializations -->
+<section class="flex flex-col gap-lg pt-md border-t border-outline-variant">
+<div class="flex justify-between items-end">
+<div>
+<h2 class="font-h2 text-h2 text-primary">Aree di Specializzazione</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Competenze verticali per l'industria manifatturiera.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant hover:border-secondary transition-colors duration-300 rounded flex flex-col h-full group">
+<div class="bg-surface-container-low p-4 border-b border-outline-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="electrical_services" data-weight="fill">electrical_services</span>
+<h3 class="font-label-sm text-label-sm uppercase text-primary uppercase">Quadristica</h3>
+</div>
+<div class="p-6 flex-1 flex flex-col gap-4">
+<p class="font-label-lg text-label-lg font-normal text-on-surface-variant">
+                            Progettazione, cablaggio e collaudo di quadri elettrici industriali di comando e controllo. Realizzazioni su misura seguendo rigorosi standard normativi per garantire sicurezza ed efficienza operativa.
+                        </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant hover:border-secondary transition-colors duration-300 rounded flex flex-col h-full group">
+<div class="bg-surface-container-low p-4 border-b border-outline-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="memory" data-weight="fill">memory</span>
+<h3 class="font-label-sm text-label-sm uppercase text-primary uppercase">Programmazione PLC</h3>
+</div>
+<div class="p-6 flex-1 flex flex-col gap-4">
+<p class="font-label-lg text-label-lg font-normal text-on-surface-variant">
+                            Sviluppo software per l'automazione di macchine e impianti. Ampia esperienza sui principali ecosistemi industriali, con focus specifico su architetture <strong>Siemens</strong> e <strong>Omron</strong>.
+                        </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant hover:border-secondary transition-colors duration-300 rounded flex flex-col h-full group">
+<div class="bg-surface-container-low p-4 border-b border-outline-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="developer_board" data-weight="fill">developer_board</span>
+<h3 class="font-label-sm text-label-sm uppercase text-primary uppercase">Progettazione PCB</h3>
+</div>
+<div class="p-6 flex-1 flex flex-col gap-4">
+<p class="font-label-lg text-label-lg font-normal text-on-surface-variant">
+                            Sviluppo di schede elettroniche custom. Dallo sbroglio master alla selezione della componentistica, realizziamo hardware dedicato per risolvere specifiche esigenze di controllo non coperte dallo standard.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission / Process -->
+<section class="bg-primary text-on-primary rounded-xl p-gutter lg:p-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 flex flex-col gap-lg">
+<div class="max-w-2xl">
+<h2 class="font-h2 text-h2 mb-4">La Nostra Missione</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim">
+                        Non siamo semplici esecutori, ma partner tecnologici. Il nostro obiettivo è affiancare il cliente dalla genesi dell'idea fino alla messa in produzione, garantendo un processo consultivo trasparente e rigoroso.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 relative">
+<!-- Connecting Line (Desktop) -->
+<div class="hidden md:block absolute top-6 left-1/6 right-1/6 h-[1px] circuit-line opacity-30 z-0"></div>
+<!-- Step 1 -->
+<div class="relative z-10 flex flex-col gap-4 bg-primary-container/40 p-6 rounded border border-primary-container backdrop-blur-sm">
+<div class="w-12 h-12 rounded bg-surface text-primary flex items-center justify-center font-h3 text-h3 shadow-sm">
+                            1
+                        </div>
+<h4 class="font-h3 text-h3">Consulenza &amp; Idea</h4>
+<p class="font-label-lg text-label-lg font-normal text-primary-fixed-dim">
+                            Analisi di fattibilità tecnica, studio delle specifiche operative e definizione dell'architettura di sistema ottimale.
+                        </p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex flex-col gap-4 bg-primary-container/40 p-6 rounded border border-primary-container backdrop-blur-sm">
+<div class="w-12 h-12 rounded bg-surface text-primary flex items-center justify-center font-h3 text-h3 shadow-sm">
+                            2
+                        </div>
+<h4 class="font-h3 text-h3">Prototipazione</h4>
+<p class="font-label-lg text-label-lg font-normal text-primary-fixed-dim">
+                            Sviluppo rapido del primo layout hardware o stesura del codice PLC core per validare le logiche critiche in ambiente di test.
+                        </p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex flex-col gap-4 bg-primary-container/40 p-6 rounded border border-primary-container backdrop-blur-sm">
+<div class="w-12 h-12 rounded bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-h3 text-h3 shadow-sm">
+                            3
+                        </div>
+<h4 class="font-h3 text-h3">Produzione &amp; Collaudo</h4>
+<p class="font-label-lg text-label-lg font-normal text-primary-fixed-dim">
+                            Assemblaggio finale, cablaggio a regola d'arte e stress test funzionale prima dell'installazione in impianto.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 full-width border-t border-t border-slate-200 dark:border-slate-800 flat no shadows">
+<div class="w-full max-w-[1280px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6 opacity-100 hover:opacity-80 transition-opacity">
+<div class="text-lg font-bold text-primary dark:text-white">
+                AF Elektra 2
+            </div>
+<nav class="flex flex-wrap justify-center gap-6 font-['Space_Grotesk'] text-xs uppercase tracking-widest text-primary dark:text-primary-fixed">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary-container dark:hover:text-primary-fixed underline underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary-container dark:hover:text-primary-fixed underline underline-offset-4" href="#">Termini e Condizioni</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary-container dark:hover:text-primary-fixed underline underline-offset-4" href="#">Supporto Tecnico</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary-container dark:hover:text-primary-fixed underline underline-offset-4" href="#">Certificazioni ISO</a>
+</nav>
+<div class="text-xs text-slate-500 font-['Space_Grotesk']">
+                © 2024 AF Elektra 2. P.IVA 01234567890. Eccellenza nell'Elettronica Industriale.
+            </div>
+</div>
+</footer>
+</body></html>
